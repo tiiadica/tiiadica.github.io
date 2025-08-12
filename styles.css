@@ -53,9 +53,11 @@ html, body {
     margin: 1rem;
     padding: 0.5rem;
   }
-  .nes-btn.is-success {
-  background-color: #7AB2DD !important;
+.nes-btn.is-success {
+  background: #7AB2DD !important;
+  background-image: none !important;
   border-color: #7AB2DD !important;
-  color: #061233 !important; /* dark navy text for contrast */
+  color: #061233 !important; /* dark text */
+  box-shadow: none !important;
 }
 }
