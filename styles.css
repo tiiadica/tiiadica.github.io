@@ -1,0 +1,31 @@
+/* Force background color */
+html, body {
+  background: #004687 !important;
+  background-color: #004687 !important;
+}
+
+/* About button (white bg, black text) */
+.nes-btn.is-primary {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Projects button (blue bg, white text) */
+.nes-btn.is-success {
+  background-color: #7AB2DD !important;
+  border-color: #7AB2DD !important;
+  color: #fff !important;
+}
+
+/* Contact button (gold bg, white text) */
+.nes-btn.is-warning {
+  background-color: #C09C5B !important;
+  border-color: #C09C5B !important;
+  color: #fff !important;
+}
+
+/* Title color */
+.hero.nes-text.is-primary {
+  color: #7AB2DD !important;
+}
