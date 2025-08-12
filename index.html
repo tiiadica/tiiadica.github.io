@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My 8-bit Site</title>
+
+  <!-- Press Start 2P (pixel font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Press Start 2P (pixel font). -->
+  <!-- NES.css (official CDN) -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#061233;
+      --card:#0d2b4a;
+      --accent:#ffd24a;
+      --text:#ffffff;
+    }
+    html,body{height:100%;margin:0;font-family:'Press Start 2P',monospace;background:var(--bg);color:var(--text);}
+    .wrap{max-width:960px;margin:3rem auto;padding:1rem;text-align:center;}
+    .hero{font-size:18px;margin-bottom:1rem;letter-spacing:2px;}
+    .pixel-img{image-rendering:pixelated;max-width:100%;height:auto;display:block;margin:0 auto;}
+    .nav{display:flex;gap:10px;justify-content:center;margin-bottom:1rem;flex-wrap:wrap;}
+    .small{font-size:10px;opacity:0.9}
+    /* keep things responsive */
+    @media (max-width:520px){.wrap{margin:1rem;padding:0.5rem}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1 class="nes-text is-primary hero">MY 8-BIT SITE</h1>
+
+    <div class="nav">
+      <a class="nes-btn is-primary" href="#about">ABOUT</a>
+      <a class="nes-btn is-success" href="#projects">PROJECTS</a>
+      <a class="nes-btn is-warning" href="#contact">CONTACT</a>
+    </div>
+
+    <section id="about" class="nes-container with-title is-centered" style="margin-bottom:1rem;">
+      <p class="title">ABOUT</p>
+      <p class="small">Built with NES.css and pixel fonts — real 8-bit styling.</p>
+    </section>
+
+    <section id="projects" style="margin-bottom:1rem;">
+      <div class="nes-container is-rounded">
+        <p class="title">PROJECTS</p>
+        <p class="small">Put your project cards, images, or links here.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="small">Want a contact form? We can add a simple static form or connect to a form service later.</p>
+    </section>
+
+    <footer style="margin-top:1.5rem;">
+      <p class="nes-text is-disabled small">Pixel vibes — NES.css</p>
+    </footer>
+  </main>
+</body>
+</html>
