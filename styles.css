@@ -60,4 +60,12 @@ html, body {
   color: #061233 !important; /* dark text */
   box-shadow: none !important;
 }
+
+.nes-btn.is-success:hover,
+.nes-btn.is-success:focus {
+  background: #5a8cc1 !important;
+  border-color: #5a8cc1 !important;
+  color: #061233 !important;
+}
+
 }
