@@ -43,3 +43,7 @@ html, body {
   gap: 1rem;
   margin-bottom: 2rem;
 }
+
+.nes-btn {
+  box-shadow: 0 0.5em #004687;
+}
