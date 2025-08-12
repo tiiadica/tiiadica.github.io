@@ -1,7 +1,7 @@
 /* Force background color */
 html, body {
-  background: #273444 !important;
-  background-color: #273444 !important;
+  background: #153a63 !important;
+  background-color: #153a63 !important;
 }
 
 /* About button (white bg, black text) */
@@ -35,10 +35,11 @@ html, body {
   text-align: center;
   display: block;
   margin: 2rem auto 1.5rem auto;
-}/* Center the nav buttons */
+}
+/* Center the nav buttons */
 .nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}.
+}
