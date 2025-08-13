@@ -4,7 +4,7 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* All NES buttons: make both shadows explicit for ALL types */
+/* All NES buttons: update furthest (outer) shadow to dark gray */
 .nes-btn,
 .nes-btn.is-primary,
 .nes-btn.is-success,
@@ -13,29 +13,49 @@ html, body {
 .nes-btn.is-disabled,
 .nes-btn.is-dark {
   box-shadow:
-    0 0.25em #004687 !important,   /* colored shadow (was blue, green, orange, gray) */
-    0 0.5em #212529 !important;    /* outer dark shadow */
+    0 0.25em #004687 !important,    /* outer dark shadow */
+    0 0.5em #212529 !important;    /* fallback for theme variants */
 }
 
-/* About button (white bg, black text) */
+/* Individual button second shadow (colored shadow) */
 .nes-btn.is-primary {
+  box-shadow:
+    0 0.25em #004687 !important,   /* colored shadow */
+    0 0.5em #212529 !important;
   background-color: #fff !important;
   border-color: #fff !important;
   color: #000 !important;
 }
-
-/* Projects button (blue bg, white text) */
 .nes-btn.is-success {
+  box-shadow:
+    0 0.25em #004687 !important,
+    0 0.5em #212529 !important;
   background-color: #7AB2DD !important;
   border-color: #7AB2DD !important;
   color: #fff !important;
 }
-
-/* Contact button (gold bg, white text) */
 .nes-btn.is-warning {
+  box-shadow:
+    0 0.25em #004687 !important,
+    0 0.5em #212529 !important;
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
   color: #fff !important;
+}
+.nes-btn.is-error {
+  box-shadow:
+    0 0.25em #004687 !important,
+    0 0.5em #212529 !important;
+}
+.nes-btn.is-disabled {
+  box-shadow:
+    0 0.25em #004687 !important,
+    0 0.5em #212529 !important;
+}
+.nes-btn.is-dark {
+  box-shadow:
+    0 0.25em #004687 !important,
+    0 0.5em #212529 !important;
 }
 
 /* Title color */
@@ -48,8 +68,7 @@ html, body {
   text-align: center;
   display: block;
   margin: 2rem auto 1.5rem auto;
-}
-/* Center the nav buttons */
+}/* Center the nav buttons */
 .nav {
   display: flex;
   justify-content: center;
