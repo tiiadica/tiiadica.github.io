@@ -4,7 +4,7 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* All NES buttons: update furthest (outer) shadow to dark gray, both shadows are !important */
+/* Only add box-shadow to button elements */
 button.nes-btn.is-primary,
 button.nes-btn.is-success,
 button.nes-btn.is-warning,
@@ -16,22 +16,23 @@ button.nes-btn.is-dark {
     0 0.5em 0 #212529 !important;
 }
 
-button.nes-btn.is-primary {
+/* Restore color styles for all nes-btn variants */
+.nes-btn.is-primary {
   background-color: #fff !important;
   border-color: #fff !important;
   color: #000 !important;
 }
-button.nes-btn.is-success {
+.nes-btn.is-success {
   background-color: #7AB2DD !important;
   border-color: #7AB2DD !important;
   color: #fff !important;
 }
-button.nes-btn.is-warning {
+.nes-btn.is-warning {
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
   color: #fff !important;
 }
-/* Other variants as before... */
+/* Other variants as previously defined */
 
 /* Title color */
 .hero.nes-text.is-primary {
