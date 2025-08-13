@@ -12,50 +12,51 @@ html, body {
 .nes-btn.is-error,
 .nes-btn.is-disabled,
 .nes-btn.is-dark {
+  /* fallback or default, but individual variants will override below */
   box-shadow:
-    0 0.25em #004687 !important,    /* outer dark shadow */
-    0 0.5em #212529 !important;    /* fallback for theme variants */
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
 }
 
 /* Individual button second shadow (colored shadow) */
 .nes-btn.is-primary {
   box-shadow:
-    0 0.25em #004687 !important,   /* colored shadow */
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
   background-color: #fff !important;
   border-color: #fff !important;
   color: #000 !important;
 }
 .nes-btn.is-success {
   box-shadow:
-    0 0.25em #004687 !important,
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
   background-color: #7AB2DD !important;
   border-color: #7AB2DD !important;
   color: #fff !important;
 }
 .nes-btn.is-warning {
   box-shadow:
-    0 0.25em #004687 !important,
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
   color: #fff !important;
 }
 .nes-btn.is-error {
   box-shadow:
-    0 0.25em #004687 !important,
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
 }
 .nes-btn.is-disabled {
   box-shadow:
-    0 0.25em #004687 !important,
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
 }
 .nes-btn.is-dark {
   box-shadow:
-    0 0.25em #004687 !important,
-    0 0.5em #212529 !important;
+    0 0.25em 0 #004687,
+    0 0.5em 0 #212529 !important;
 }
 
 /* Title color */
