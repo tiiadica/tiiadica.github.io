@@ -4,14 +4,24 @@ html, body {
   background-color: #153a63 !important;
 }
 
+/* All NES buttons: update both shadow layers */
+.nes-btn,
+.nes-btn.is-primary,
+.nes-btn.is-success,
+.nes-btn.is-warning,
+.nes-btn.is-error,
+.nes-btn.is-disabled,
+.nes-btn.is-dark {
+  box-shadow:
+    0 0.25em #004687 !important,   /* colored shadow (was blue, green, orange, gray) */
+    0 0.5em #212529 !important;    /* outer dark shadow */
+}
+
 /* About button (white bg, black text) */
 .nes-btn.is-primary {
   background-color: #fff !important;
   border-color: #fff !important;
   color: #000 !important;
-  box-shadow:
-    0 0.25em #212529,
-    0 0.5em #004687 !important;
 }
 
 /* Projects button (blue bg, white text) */
@@ -19,9 +29,6 @@ html, body {
   background-color: #7AB2DD !important;
   border-color: #7AB2DD !important;
   color: #fff !important;
-  box-shadow:
-    0 0.25em #212529,
-    0 0.5em #004687 !important;
 }
 
 /* Contact button (gold bg, white text) */
@@ -29,9 +36,6 @@ html, body {
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
   color: #fff !important;
-  box-shadow:
-    0 0.25em #212529,
-    0 0.5em #004687 !important;
 }
 
 /* Title color */
@@ -44,7 +48,8 @@ html, body {
   text-align: center;
   display: block;
   margin: 2rem auto 1.5rem auto;
-}/* Center the nav buttons */
+}
+/* Center the nav buttons */
 .nav {
   display: flex;
   justify-content: center;
