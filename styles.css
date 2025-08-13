@@ -34,13 +34,6 @@ html, body {
     0 0.5em #004687 !important;
 }
 
-/* Restore global button shadow to NES.css default */
-.nes-btn {
-  box-shadow:
-    0 0.25em #212529,
-    0 0.5em #209cee;
-}
-
 /* Title color */
 .hero.nes-text.is-primary {
   color: #7AB2DD !important;
@@ -51,8 +44,7 @@ html, body {
   text-align: center;
   display: block;
   margin: 2rem auto 1.5rem auto;
-}
-/* Center the nav buttons */
+}/* Center the nav buttons */
 .nav {
   display: flex;
   justify-content: center;
