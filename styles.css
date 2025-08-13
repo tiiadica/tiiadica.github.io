@@ -4,19 +4,19 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* Only add box-shadow to button elements */
-button.nes-btn.is-primary,
-button.nes-btn.is-success,
-button.nes-btn.is-warning,
-button.nes-btn.is-error,
-button.nes-btn.is-disabled,
-button.nes-btn.is-dark {
+/* Apply box-shadow to ALL NES button variants (buttons, anchors, etc.) */
+.nes-btn.is-primary,
+.nes-btn.is-success,
+.nes-btn.is-warning,
+.nes-btn.is-error,
+.nes-btn.is-disabled,
+.nes-btn.is-dark {
   box-shadow:
     0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
 }
 
-/* Restore color styles for all nes-btn variants */
+/* Color styles for all nes-btn variants */
 .nes-btn.is-primary {
   background-color: #fff !important;
   border-color: #fff !important;
@@ -51,4 +51,4 @@ button.nes-btn.is-dark {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}
+}.
