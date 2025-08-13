@@ -4,7 +4,7 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* All NES buttons: update both shadow layers */
+/* All NES buttons: make both shadows explicit for ALL types */
 .nes-btn,
 .nes-btn.is-primary,
 .nes-btn.is-success,
