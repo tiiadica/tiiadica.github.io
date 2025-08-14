@@ -73,14 +73,7 @@ a.nes-btn.is-dark,
   margin-bottom: 2rem;
 }
 
-/* Hide all content below the buttons */
-.main-content,
-.content-below-buttons,
-.after-buttons,
-#main,
-.section-below,
-footer,
-.page-content,
-body > :not(.hero):not(.nav):not(script):not(style) {
+/* Only hide content that comes after the buttons */
+.nav ~ * {
   display: none !important;
 }
