@@ -62,6 +62,23 @@ a.nes-btn.is-dark,
     0 0.5em 0 #212529 !important;
 }
 
+/* Individual button shadow overrides */
+.nes-btn.is-primary,
+.nes-btn.is-primary:active,
+.nes-btn.is-primary:focus {
+  box-shadow:
+    0 0.25em 0 #004687 !important,
+    0 0.5em 0 #212529 !important;
+}
+
+.nes-btn.is-warning,
+.nes-btn.is-warning:active,
+.nes-btn.is-warning:focus {
+  box-shadow:
+    0 0.25em 0 #62cbc9 !important,
+    0 0.5em 0 #212529 !important;
+}
+
 /* PODCAST button */
 .nes-btn.is-primary {
   background-color: #C09C5B !important;
@@ -100,21 +117,15 @@ a.nes-btn.is-dark,
   display: none !important;
 }
 
-/* Override NES.css ::after pseudo-element shadows with consistent accent color */
-.nes-btn.is-primary::after,
-.nes-btn.is-success::after,
-.nes-btn.is-warning::after {
-  box-shadow: inset -4px -4px #7AB2DD !important;
-}
+/* Override NES.css ::after pseudo-element shadows with per-button accent colors */
+.nes-btn.is-success::after { box-shadow: inset -4px -4px #7AB2DD !important; }
+.nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
+.nes-btn.is-warning::after { box-shadow: inset -4px -4px #62cbc9 !important; }
 
-.nes-btn.is-primary:hover::after,
-.nes-btn.is-success:hover::after,
-.nes-btn.is-warning:hover::after {
-  box-shadow: inset -6px -6px #7AB2DD !important;
-}
+.nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
+.nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
+.nes-btn.is-warning:hover::after { box-shadow: inset -6px -6px #62cbc9 !important; }
 
-.nes-btn.is-primary:active:not(.is-disabled)::after,
-.nes-btn.is-success:active:not(.is-disabled)::after,
-.nes-btn.is-warning:active:not(.is-disabled)::after {
-  box-shadow: inset 4px 4px #7AB2DD !important;
-}
+.nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
+.nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
+.nes-btn.is-warning:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #62cbc9 !important; }
