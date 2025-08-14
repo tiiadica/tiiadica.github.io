@@ -11,7 +11,7 @@ html, body {
 
 /* Custom cursor */
 body {
-  cursor: ('assets/cursor.png') 16 16, auto;
+  cursor: url('assets/cursor.png') 16 16, auto;
 }
 
 .nes-btn.is-primary,
@@ -76,6 +76,11 @@ a.nes-btn.is-dark,
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+}
+
+/* Only hide content that comes after the buttons */
+.nav ~ * {
+  display: none !important;
 }
 
 /* Only hide content that comes after the buttons */
