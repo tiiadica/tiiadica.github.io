@@ -1,11 +1,9 @@
-/* Add black stroke outline to the title text */
 .hero.nes-text.is-primary {
   color: #7AB2DD !important;
-  -webkit-text-stroke: 1px #000;
-  text-stroke: 1px #000;  /* For legacy support */
   font-weight: bold;
 }
 
+/* Existing styles preserved below */
 html, body {
   background: #153a63 !important;
   background-color: #153a63 !important;
