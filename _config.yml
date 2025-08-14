@@ -1,0 +1,29 @@
+title: "THE ROYAL FAMILY"
+description: "Kansas City Royals & KC Current coverage, analysis, and opinion."
+url: "https://tiiadica.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:slug/
+paginate: 10
+paginate_path: "/news/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+category_colors:
+  royals: "#004687"
+  current: "#62cbc9"
+  podcast: "#C09C5B"
+  opinion: "#7AB2DD"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: staff
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
