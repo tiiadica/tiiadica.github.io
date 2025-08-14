@@ -11,7 +11,7 @@ html, body {
 
 /* Custom cursor */
 body {
-  cursor: url('assets/cursor.png') 16 16, auto;
+  cursor: ('assets/cursor.png') 16 16, auto;
 }
 
 .nes-btn.is-primary,
