@@ -62,22 +62,26 @@ a.nes-btn.is-dark,
     0 0.5em 0 #212529 !important;
 }
 
+/* PODCAST button */
 .nes-btn.is-primary {
-  background-color: #fff !important;
-  border-color: #fff !important;
-  color: #000 !important;
-}
-.nes-btn.is-success {
-  background-color: #7AB2DD !important;
-  border-color: #7AB2DD !important;
-  color: #fff !important;
-}
-.nes-btn.is-warning {
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
+  color: #000 !important; /* Use black for contrast on lighter gold */
+}
+
+/* ROYALS button */
+.nes-btn.is-success {
+  background-color: #004687 !important;
+  border-color: #004687 !important;
   color: #fff !important;
 }
-/* Other variants as previously defined */
+
+/* CURRENT button */
+.nes-btn.is-warning {
+  background-color: #CF3339 !important;
+  border-color: #CF3339 !important;
+  color: #fff !important;
+}/* Other variants as previously defined */
 
 .hero {
   text-align: center;
