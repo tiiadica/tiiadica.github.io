@@ -4,13 +4,37 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* Apply box-shadow to ALL NES button variants (buttons, anchors, etc.) */
+/* Apply box-shadow to ALL NES button variants (buttons, anchors, active, focus, disabled, etc.) with maximum specificity */
 .nes-btn.is-primary,
 .nes-btn.is-success,
 .nes-btn.is-warning,
 .nes-btn.is-error,
 .nes-btn.is-disabled,
-.nes-btn.is-dark {
+.nes-btn.is-dark,
+button.nes-btn.is-primary,
+button.nes-btn.is-success,
+button.nes-btn.is-warning,
+button.nes-btn.is-error,
+button.nes-btn.is-disabled,
+button.nes-btn.is-dark,
+a.nes-btn.is-primary,
+a.nes-btn.is-success,
+a.nes-btn.is-warning,
+a.nes-btn.is-error,
+a.nes-btn.is-disabled,
+a.nes-btn.is-dark,
+.nes-btn.is-primary:active,
+.nes-btn.is-success:active,
+.nes-btn.is-warning:active,
+.nes-btn.is-error:active,
+.nes-btn.is-disabled:active,
+.nes-btn.is-dark:active,
+.nes-btn.is-primary:focus,
+.nes-btn.is-success:focus,
+.nes-btn.is-warning:focus,
+.nes-btn.is-error:focus,
+.nes-btn.is-disabled:focus,
+.nes-btn.is-dark:focus {
   box-shadow:
     0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
@@ -51,4 +75,4 @@ html, body {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}.
+}
