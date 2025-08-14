@@ -1,46 +1,35 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>THE ROYAL FAMILY</title>
+---
+layout: default
+title: "THE ROYAL FAMILY"
+---
+<main class="wrap">
+  <h1 class="nes-text is-primary hero">THE ROYAL FAMILY</h1>
 
-  <!-- Press Start 2P (pixel font) -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Press Start 2P (pixel font). -->
-  <!-- NES.css (official CDN) -->
-  <link href="nes.min.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
+  <div class="nav">
+    <a class="nes-btn is-primary" href="/news/">PODCAST</a>
+    <a class="nes-btn is-success" href="/categories/royals/">ROYALS</a>
+    <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
+  </div>
 
-</head>
-<body>
-  <main class="wrap">
-    <h1 class="nes-text is-primary hero">THE ROYAL FAMILY</h1>
+  <section id="about" class="nes-container with-title is-centered" style="margin-bottom:1rem;">
+    <p class="title">PODCAST</p>
+    <p class="small">Built with NES.css and pixel fonts — real 8-bit styling.</p>
+  </section>
 
-    <div class="nav">
-      <a class="nes-btn is-primary" href="#podcast">PODCAST</a>
-      <a class="nes-btn is-success" href="#royals">ROYALS</a>
-      <a class="nes-btn is-warning" href="#current">CURRENT</a>
+  <section id="projects" style="margin-bottom:1rem;">
+    <div class="nes-container is-rounded">
+      <p class="title">ROYALS</p>
+      <p class="small">Put your project cards, images, or links here.</p>
     </div>
+  </section>
 
-    <section id="about" class="nes-container with-title is-centered" style="margin-bottom:1rem;">
-      <p class="title">PODCAST</p>
-      <p class="small">Built with NES.css and pixel fonts — real 8-bit styling.</p>
-    </section>
+  <section id="contact">
+    <p class="small">Want a contact form? We can add a simple static form or connect to a form service later.</p>
+  </section>
 
-    <section id="projects" style="margin-bottom:1rem;">
-      <div class="nes-container is-rounded">
-        <p class="title">ROYALS</p>
-        <p class="small">Put your project cards, images, or links here.</p>
-      </div>
-    </section>
+  {% include featured.html %}
 
-    <section id="contact">
-      <p class="small">Want a contact form? We can add a simple static form or connect to a form service later.</p>
-    </section>
-
-    <footer style="margin-top:1.5rem;">
-      <p class="nes-text is-disabled small">Pixel vibes — NES.css</p>
-    </footer>
-  </main>
-</body>
-</html>
+  <footer style="margin-top:1.5rem;">
+    <p class="nes-text is-disabled small">Pixel vibes — NES.css</p>
+  </footer>
+</main>
