@@ -1,10 +1,16 @@
-/* Force background color */
+/* Add black stroke outline to the title text */
+.hero.nes-text.is-primary {
+  color: #7AB2DD !important;
+  -webkit-text-stroke: 2px #000;
+  text-stroke: 2px #000;  /* For legacy support */
+  font-weight: bold;
+}
+
 html, body {
   background: #153a63 !important;
   background-color: #153a63 !important;
 }
 
-/* Apply box-shadow to ALL NES button variants (buttons, anchors, active, focus, disabled, etc.) with maximum specificity */
 .nes-btn.is-primary,
 .nes-btn.is-success,
 .nes-btn.is-warning,
@@ -40,7 +46,6 @@ a.nes-btn.is-dark,
     0 0.5em 0 #212529 !important;
 }
 
-/* Color styles for all nes-btn variants */
 .nes-btn.is-primary {
   background-color: #fff !important;
   border-color: #fff !important;
@@ -58,18 +63,11 @@ a.nes-btn.is-dark,
 }
 /* Other variants as previously defined */
 
-/* Title color */
-.hero.nes-text.is-primary {
-  color: #7AB2DD !important;
-}
-
-/* Center the hero title */
 .hero {
   text-align: center;
   display: block;
   margin: 2rem auto 1.5rem auto;
 }
-/* Center the nav buttons */
 .nav {
   display: flex;
   justify-content: center;
