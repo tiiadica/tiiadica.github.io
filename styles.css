@@ -9,9 +9,22 @@ html, body {
   background-color: #153a63 !important;
 }
 
-/* Custom cursor */
-body {
-  cursor: url('assets/cursor.png') 16 16, auto;
+/* Custom cursor - Force on all elements */
+* {
+  cursor: url('assets/cursor.png') 16 16, auto !important;
+}
+
+/* Specifically target NES buttons and interactive elements */
+.nes-btn,
+.nes-btn:hover,
+.nes-btn:active,
+.nes-btn:focus,
+a,
+button,
+input,
+textarea,
+select {
+  cursor: url('assets/cursor.png') 16 16, auto !important;
 }
 
 .nes-btn.is-primary,
@@ -76,11 +89,6 @@ a.nes-btn.is-dark,
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}
-
-/* Only hide content that comes after the buttons */
-.nav ~ * {
-  display: none !important;
 }
 
 /* Only hide content that comes after the buttons */
