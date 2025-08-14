@@ -62,6 +62,25 @@ a.nes-btn.is-dark,
     0 0.5em 0 #212529 !important;
 }
 
+/* Override NES.css ::after pseudo-element shadows with consistent #004687 color */
+.nes-btn.is-primary::after,
+.nes-btn.is-success::after,
+.nes-btn.is-warning::after {
+  box-shadow: inset -4px -4px #004687 !important;
+}
+
+.nes-btn.is-primary:hover::after,
+.nes-btn.is-success:hover::after,
+.nes-btn.is-warning:hover::after {
+  box-shadow: inset -6px -6px #004687 !important;
+}
+
+.nes-btn.is-primary:active:not(.is-disabled)::after,
+.nes-btn.is-success:active:not(.is-disabled)::after,
+.nes-btn.is-warning:active:not(.is-disabled)::after {
+  box-shadow: inset 4px 4px #004687 !important;
+}
+
 .nes-btn.is-primary {
   background-color: #fff !important;
   border-color: #fff !important;
