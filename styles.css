@@ -9,6 +9,11 @@ html, body {
   background-color: #153a63 !important;
 }
 
+/* Custom cursor */
+body {
+  cursor: url('assets/cursor.png') 16 16, auto;
+}
+
 .nes-btn.is-primary,
 .nes-btn.is-success,
 .nes-btn.is-warning,
