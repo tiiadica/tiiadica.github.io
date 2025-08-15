@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New Podcast Episode: Chiefs Dynasty Discussion with Special Guest"
-date: 2025-01-12 12:00:00 -0600
+date: 2025-08-08 12:00:00 -0600
 categories:
   - podcast
 author: staff  

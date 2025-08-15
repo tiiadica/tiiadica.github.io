@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Royals Offseason Moves: Building for Another Championship Run"
-date: 2025-01-10 14:00:00 -0600
+date: 2025-08-01 14:00:00 -0600
 categories:
   - Royals
 author: staff
