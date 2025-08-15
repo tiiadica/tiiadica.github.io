@@ -3,7 +3,7 @@ layout: post
 title: "Royals Offseason Moves: Building for Another Championship Run"
 date: 2025-01-10 14:00:00 -0600
 categories:
-  - royals
+  - Royals
 author: staff
 featured: false
 description: "Analyzing the Kansas City Royals' strategic moves this offseason as they aim to build on their recent success."

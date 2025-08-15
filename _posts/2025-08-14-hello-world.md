@@ -5,7 +5,7 @@ date: 2025-08-14 10:00:00 +0000
 categories:
   - Royals
   - Updates
-featured: true
+featured: false
 description: "Kickoff post introducing the purpose of the site."
 image: /assets/images/hello-world-cover.jpg
 ---
