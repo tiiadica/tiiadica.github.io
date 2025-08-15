@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Kansas City is America's Best Sports City Right Now"
-date: 2025-01-06 10:00:00 -0600
+date: 2025-07-15 10:00:00 -0600
 categories:
   - opinion
 author: staff

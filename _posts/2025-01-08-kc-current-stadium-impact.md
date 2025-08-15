@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "KC Current's Historic Stadium Opening Sets New Standard for Women's Soccer"
-date: 2025-01-08 16:30:00 -0600
+date: 2025-07-22 16:30:00 -0600
 categories:
   - current
 author: staff
