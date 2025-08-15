@@ -112,11 +112,6 @@ a.nes-btn.is-dark,
   margin-bottom: 2rem;
 }
 
-/* Only hide content that comes after the buttons */
-.nav ~ * {
-  display: none !important;
-}
-
 /* Override NES.css ::after pseudo-element shadows with per-button accent colors */
 .nes-btn.is-success::after { box-shadow: inset -4px -4px #7AB2DD !important; }
 .nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
