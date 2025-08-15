@@ -11,6 +11,8 @@ title: "THE ROYAL FAMILY"
     <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
   </div>
 
+  {% include featured.html %}
+
   <section id="recent-posts" class="nes-container is-rounded" style="margin-bottom:1rem;">
     <p class="title">Recent Posts</p>
     {% if site.posts.size == 0 %}
@@ -34,10 +36,4 @@ title: "THE ROYAL FAMILY"
       <p class="small"><a href="/news/">View all posts →</a></p>
     {% endif %}
   </section>
-
-  {% include featured.html %}
-
-  <footer style="margin-top:1.5rem;">
-    <p class="nes-text is-disabled small">Pixel vibes — NES.css</p>
-  </footer>
 </main>
