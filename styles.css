@@ -79,6 +79,30 @@ a.nes-btn.is-dark,
     0 0.5em 0 #212529 !important;
 }
 
+.nes-btn.is-error,
+.nes-btn.is-error:active,
+.nes-btn.is-error:focus {
+  box-shadow:
+    0 0.25em 0 #004687 !important,
+    0 0.5em 0 #212529 !important;
+}
+
+.nes-btn.is-disabled,
+.nes-btn.is-disabled:active,
+.nes-btn.is-disabled:focus {
+  box-shadow:
+    0 0.25em 0 #CF3339 !important,
+    0 0.5em 0 #212529 !important;
+}
+
+.nes-btn.is-dark,
+.nes-btn.is-dark:active,
+.nes-btn.is-dark:focus {
+  box-shadow:
+    0 0.25em 0 #7AB2DD !important,
+    0 0.5em 0 #212529 !important;
+}
+
 /* PODCAST button */
 .nes-btn.is-primary {
   background-color: #C09C5B !important;
@@ -98,6 +122,27 @@ a.nes-btn.is-dark,
   background-color: #CF3339 !important;
   border-color: #CF3339 !important;
   color: #fff !important;
+}
+
+/* SUPPORT KC button */
+.nes-btn.is-error {
+  background-color: #7AB2DD !important;
+  border-color: #7AB2DD !important;
+  color: #fff !important;
+}
+
+/* WORLD button */
+.nes-btn.is-disabled {
+  background-color: #62cbc9 !important;
+  border-color: #62cbc9 !important;
+  color: #fff !important;
+}
+
+/* STATS button */
+.nes-btn.is-dark {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+  color: #fff !important;
 }/* Other variants as previously defined */
 
 .hero {
@@ -116,11 +161,20 @@ a.nes-btn.is-dark,
 .nes-btn.is-success::after { box-shadow: inset -4px -4px #7AB2DD !important; }
 .nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-warning::after { box-shadow: inset -4px -4px #62cbc9 !important; }
+.nes-btn.is-error::after { box-shadow: inset -4px -4px #004687 !important; }
+.nes-btn.is-disabled::after { box-shadow: inset -4px -4px #CF3339 !important; }
+.nes-btn.is-dark::after { box-shadow: inset -4px -4px #7AB2DD !important; }
 
 .nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
 .nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-warning:hover::after { box-shadow: inset -6px -6px #62cbc9 !important; }
+.nes-btn.is-error:hover::after { box-shadow: inset -6px -6px #004687 !important; }
+.nes-btn.is-disabled:hover::after { box-shadow: inset -6px -6px #CF3339 !important; }
+.nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
 
 .nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
 .nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-warning:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #62cbc9 !important; }
+.nes-btn.is-error:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
+.nes-btn.is-disabled:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #CF3339 !important; }
+.nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
