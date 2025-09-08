@@ -3,6 +3,13 @@
   font-weight: bold;
 }
 
+/* Make all nav buttons the same width */
+.nav .nes-btn {
+  width: 112px;
+  text-align: center;
+  white-space: nowrap;
+}
+
 /* Existing styles preserved below */
 html, body {
   background: #26364b !important;
