@@ -189,7 +189,7 @@ a.nes-btn.is-inkc,
 .nes-btn.is-inkc {
   background-color: #ffffff !important;
   border-color: #ffffff !important;
-  color: #fff !important; /* White text per request */
+  color: #000 !important; /* Black text for visibility */
 }/* Other variants as previously defined */
 
 .hero {
