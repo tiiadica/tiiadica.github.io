@@ -1,7 +1,7 @@
 .hero.nes-text.is-primary {
   color: #7AB2DD !important;
   font-weight: bold;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #000;
 }
 
