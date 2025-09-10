@@ -24,7 +24,6 @@
         {% if featured.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
       </div>
       <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
-      <a class="nes-btn is-primary" href="{{ featured.url | relative_url }}">Read Article</a>
     </div>
   </article>
 </section>
