@@ -7,17 +7,25 @@
 {% if featured %}
 <section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
   <h2 class="nes-text is-primary" style="margin-top:0;">Featured</h2>
-  <article>
-    <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
-    <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
-      <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
-      {% for c in featured.categories %}
-        {% include category-badge.html category=c %}
-      {% endfor %}
-      {% if featured.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
+  <article class="featured-content">
+    {% assign featured_image = featured.image | default: "/assets/images/featured-placeholder.svg" %}
+    <div class="featured-image-container">
+      <a href="{{ featured.url | relative_url }}">
+        <img src="{{ featured_image | relative_url }}" alt="{{ featured.title }}" class="featured-image">
+      </a>
     </div>
-    <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
-    <a class="nes-btn is-primary" href="{{ featured.url | relative_url }}">Read Article</a>
+    <div class="featured-text">
+      <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
+      <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
+        <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
+        {% for c in featured.categories %}
+          {% include category-badge.html category=c %}
+        {% endfor %}
+        {% if featured.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
+      </div>
+      <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
+      <a class="nes-btn is-primary" href="{{ featured.url | relative_url }}">Read Article</a>
+    </div>
   </article>
 </section>
 {% endif %}

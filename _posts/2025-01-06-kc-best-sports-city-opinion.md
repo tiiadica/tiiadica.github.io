@@ -5,7 +5,7 @@ date: 2025-07-15 10:00:00 -0600
 categories:
   - opinion
 author: staff
-featured: false
+featured: true
 description: "A passionate argument for why Kansas City has become the premier sports city in America, with championship culture across multiple teams."
 ---
 
