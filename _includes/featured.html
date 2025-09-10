@@ -7,13 +7,13 @@
 {% if featured %}
 <section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
   <h2 class="nes-text is-primary" style="margin-top:0;">Featured</h2>
+  {% assign featured_image = featured.image | default: "/assets/images/featured-default.svg" %}
+  <div class="featured-image-container">
+    <a href="{{ featured.url | relative_url }}">
+      <img src="{{ featured_image | relative_url }}" alt="{{ featured.title }}" class="featured-image">
+    </a>
+  </div>
   <article class="featured-content">
-    {% assign featured_image = featured.image | default: "/assets/images/featured-placeholder.svg" %}
-    <div class="featured-image-container">
-      <a href="{{ featured.url | relative_url }}">
-        <img src="{{ featured_image | relative_url }}" alt="{{ featured.title }}" class="featured-image">
-      </a>
-    </div>
     <div class="featured-text">
       <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
       <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
