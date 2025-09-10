@@ -5,8 +5,9 @@ date: 2025-07-22 16:30:00 -0600
 categories:
   - current
 author: staff
-featured: true
+featured: false
 description: "Kansas City Current's CPKC Stadium represents a groundbreaking moment for women's professional soccer in America."
+image: /assets/images/current-stadium.svg
 ---
 
 The Kansas City Current's CPKC Stadium has already become a landmark achievement in women's professional sports, and as we look ahead to the 2025 NWSL season, the impact continues to resonate throughout the soccer world.
