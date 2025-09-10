@@ -29,7 +29,7 @@ const videos = [
 ```
 
 ### Current Sample Data
-The implementation currently uses sample data with placeholder video IDs (`dQw4w9WgXcQ`). 
+The implementation now uses professional placeholder data that safely replaces inappropriate content. The placeholder video IDs (TEMP_PLACEHOLDER_*) display professional messaging instead of loading invalid or inappropriate videos. 
 
 ## How to Update with Real Playlist Data
 
@@ -64,8 +64,10 @@ The video selector is implemented in `/podcast.md` in the `loadYouTubeVideoSelec
 A test file has been created at `/tmp/test_podcast.html` to verify the functionality works correctly before deploying changes.
 
 ## Notes
-- The current implementation uses sample video IDs for testing
-- Videos will load with YouTube's embed player
+- The current implementation uses professional placeholder IDs (TEMP_PLACEHOLDER_*) for safety
+- Placeholder content shows professional messaging instead of loading inappropriate videos
+- Videos will load with YouTube's embed player once real video IDs are provided
 - The interface maintains the site's NES.css theme
 - All navigation controls (dropdown, buttons) work correctly
 - The layout is responsive for mobile devices
+- Safe for production deployment - no inappropriate content will be displayed

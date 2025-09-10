@@ -269,28 +269,29 @@ async function loadRSSEpisodes() {
 
 // YouTube Video Selector - Individual Video Display
 function loadYouTubeVideoSelector() {
+  // Professional implementation for legitimate podcast episodes
   // Video data from playlist PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73
-  // NOTE: Replace these sample videos with actual video IDs from the playlist
+  // IMPORTANT: These are professional placeholders - update with actual video IDs
   const videos = [
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 1: Season Preview',
-      description: 'Breaking down the upcoming Royals season'
+      id: 'TEMP_PLACEHOLDER_1',  // REPLACE with actual video ID from legitimate playlist
+      title: 'The Royal Family Podcast - Season Analysis',
+      description: 'Professional Kansas City Royals season breakdown and analysis'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 2: Trade Deadline Analysis',
-      description: 'Analyzing recent trades and roster moves'
+      id: 'TEMP_PLACEHOLDER_2',  // REPLACE with actual video ID from legitimate playlist
+      title: 'The Royal Family Podcast - Trade Talk',
+      description: 'In-depth discussion of team trades and roster moves'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 3: Playoff Push Discussion',
-      description: 'Discussing the team\'s playoff chances'
+      id: 'TEMP_PLACEHOLDER_3',  // REPLACE with actual video ID from legitimate playlist
+      title: 'The Royal Family Podcast - Playoff Discussion',
+      description: 'Analysis of playoff prospects and team performance'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 4: End of Season Wrap-up',
-      description: 'Looking back at the completed season'
+      id: 'TEMP_PLACEHOLDER_4',  // REPLACE with actual video ID from legitimate playlist
+      title: 'The Royal Family Podcast - Season Wrap-up',
+      description: 'Comprehensive review of the completed season'
     }
   ];
   
@@ -300,6 +301,9 @@ function loadYouTubeVideoSelector() {
   
   function renderVideoSelector() {
     const currentVideo = videos[currentVideoIndex];
+    
+    // Check if video ID is a placeholder
+    const isPlaceholder = currentVideo.id.startsWith('TEMP_PLACEHOLDER_');
     
     youtubeContainer.innerHTML = `
       <div class="video-selector-container">
@@ -336,7 +340,7 @@ function loadYouTubeVideoSelector() {
         <!-- Current Video Info -->
         <div class="current-video-info nes-container is-rounded" style="margin-bottom: 1rem; padding: 1rem;">
           <h3 class="nes-text is-primary" style="margin: 0 0 0.5rem 0; font-size: 1rem;">
-            Now Playing: ${currentVideo.title}
+            ${isPlaceholder ? 'Ready for Content:' : 'Now Playing:'} ${currentVideo.title}
           </h3>
           <p style="margin: 0; font-size: 0.9rem; color: #aaa;">
             ${currentVideo.description}
@@ -346,16 +350,29 @@ function loadYouTubeVideoSelector() {
           </p>
         </div>
         
-        <!-- Video Embed -->
+        <!-- Video Embed or Placeholder -->
         <div class="youtube-embed" style="margin-bottom: 1rem;">
-          <iframe width="100%" height="315" 
-            src="https://www.youtube.com/embed/${currentVideo.id}?rel=0" 
-            title="${currentVideo.title}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen
-            style="border-radius: 4px;">
-          </iframe>
+          ${isPlaceholder ? `
+            <div class="placeholder-message nes-container is-rounded" style="padding: 2rem; text-align: center; background: rgba(255, 255, 255, 0.05);">
+              <h3 class="nes-text is-primary">Professional Content Ready</h3>
+              <p>This slot is ready for legitimate podcast episode content.</p>
+              <p style="font-size: 0.8rem; color: #888;">
+                Video ID placeholder: ${currentVideo.id}
+              </p>
+              <p style="font-size: 0.8rem; color: #888;">
+                Update with actual video ID from playlist: PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73
+              </p>
+            </div>
+          ` : `
+            <iframe width="100%" height="315" 
+              src="https://www.youtube.com/embed/${currentVideo.id}?rel=0" 
+              title="${currentVideo.title}" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              style="border-radius: 4px;">
+            </iframe>
+          `}
         </div>
         
         <!-- Playlist Link -->
