@@ -234,11 +234,11 @@ async function loadYouTubePlaylist() {
   const youtubeContainer = document.getElementById('youtube-playlist');
   
   try {
-    // Simple iframe embed for the playlist
+    // Enhanced iframe embed for the playlist with proper playlist navigation
     youtubeContainer.innerHTML = `
       <div class="youtube-embed" style="margin-bottom: 1rem;">
         <iframe width="100%" height="315" 
-          src="https://www.youtube.com/embed/videoseries?list=${playlistId}" 
+          src="https://www.youtube.com/embed?listType=playlist&list=${playlistId}&index=0&showinfo=1" 
           title="The Royal Family Podcast YouTube Playlist" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
