@@ -144,6 +144,43 @@ permalink: /podcast/
   color: #aaa;
 }
 
+/* Video selector specific styles */
+.video-selector-container {
+  width: 100%;
+}
+
+.video-selector .nes-select select {
+  width: 100%;
+  max-width: 100%;
+}
+
+.video-navigation {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.video-navigation .nes-btn {
+  min-width: 100px;
+  font-size: 0.9rem;
+}
+
+.current-video-info {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.current-video-info h3 {
+  color: #C09C5B !important;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.youtube-embed iframe {
+  border-radius: 4px;
+  border: 2px solid #444;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .episodes-split {
@@ -160,6 +197,11 @@ permalink: /podcast/
   
   .platform-icon {
     font-size: 1.5rem;
+  }
+  
+  .video-navigation .nes-btn {
+    min-width: 80px;
+    font-size: 0.8rem;
   }
 }
 </style>
@@ -225,38 +267,134 @@ async function loadRSSEpisodes() {
   }
 }
 
-// YouTube Playlist Loader
-async function loadYouTubePlaylist() {
-  const playlistId = 'PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73';
+// YouTube Video Selector - Individual Video Display
+function loadYouTubeVideoSelector() {
+  // Video data from playlist PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73
+  // NOTE: Replace these sample videos with actual video IDs from the playlist
+  const videos = [
+    {
+      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
+      title: 'Episode 1: Season Preview',
+      description: 'Breaking down the upcoming Royals season'
+    },
+    {
+      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
+      title: 'Episode 2: Trade Deadline Analysis',
+      description: 'Analyzing recent trades and roster moves'
+    },
+    {
+      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
+      title: 'Episode 3: Playoff Push Discussion',
+      description: 'Discussing the team\'s playoff chances'
+    },
+    {
+      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
+      title: 'Episode 4: End of Season Wrap-up',
+      description: 'Looking back at the completed season'
+    }
+  ];
   
-  // For now, we'll use a simplified approach since we need YouTube API key for full functionality
-  // This creates placeholder structure that can be enhanced later
+  let currentVideoIndex = 0;
+  const playlistId = 'PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73';
   const youtubeContainer = document.getElementById('youtube-playlist');
   
-  try {
-    // Enhanced iframe embed for the playlist with proper playlist navigation
+  function renderVideoSelector() {
+    const currentVideo = videos[currentVideoIndex];
+    
     youtubeContainer.innerHTML = `
-      <div class="youtube-embed" style="margin-bottom: 1rem;">
-        <iframe width="100%" height="315" 
-          src="https://www.youtube.com/embed?listType=playlist&list=${playlistId}&index=0&showinfo=1" 
-          title="The Royal Family Podcast YouTube Playlist" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen
-          style="border-radius: 4px;">
-        </iframe>
+      <div class="video-selector-container">
+        <!-- Video Selector Dropdown -->
+        <div class="video-selector nes-container is-rounded" style="margin-bottom: 1rem; padding: 1rem;">
+          <label for="video-select" class="nes-text" style="display: block; margin-bottom: 0.5rem;">
+            Select Episode:
+          </label>
+          <div class="nes-select" style="margin-bottom: 0.5rem;">
+            <select id="video-select" onchange="selectVideo(this.value)">
+              ${videos.map((video, index) => `
+                <option value="${index}" ${index === currentVideoIndex ? 'selected' : ''}>
+                  ${video.title}
+                </option>
+              `).join('')}
+            </select>
+          </div>
+          
+          <!-- Navigation Buttons -->
+          <div class="video-navigation" style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
+            <button class="nes-btn ${currentVideoIndex === 0 ? 'is-disabled' : 'is-primary'}" 
+                    onclick="previousVideo()" 
+                    ${currentVideoIndex === 0 ? 'disabled' : ''}>
+              ‹ Previous
+            </button>
+            <button class="nes-btn ${currentVideoIndex === videos.length - 1 ? 'is-disabled' : 'is-primary'}" 
+                    onclick="nextVideo()" 
+                    ${currentVideoIndex === videos.length - 1 ? 'disabled' : ''}>
+              Next ›
+            </button>
+          </div>
+        </div>
+        
+        <!-- Current Video Info -->
+        <div class="current-video-info nes-container is-rounded" style="margin-bottom: 1rem; padding: 1rem;">
+          <h3 class="nes-text is-primary" style="margin: 0 0 0.5rem 0; font-size: 1rem;">
+            Now Playing: ${currentVideo.title}
+          </h3>
+          <p style="margin: 0; font-size: 0.9rem; color: #aaa;">
+            ${currentVideo.description}
+          </p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem; color: #888;">
+            Episode ${currentVideoIndex + 1} of ${videos.length}
+          </p>
+        </div>
+        
+        <!-- Video Embed -->
+        <div class="youtube-embed" style="margin-bottom: 1rem;">
+          <iframe width="100%" height="315" 
+            src="https://www.youtube.com/embed/${currentVideo.id}?rel=0" 
+            title="${currentVideo.title}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            style="border-radius: 4px;">
+          </iframe>
+        </div>
+        
+        <!-- Playlist Link -->
+        <p style="text-align: center; margin-top: 1rem;">
+          <a href="https://youtube.com/playlist?list=${playlistId}" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="nes-btn is-primary">
+            View Full Playlist on YouTube
+          </a>
+        </p>
       </div>
-      <p style="text-align: center; margin-top: 1rem;">
-        <a href="https://youtube.com/playlist?list=${playlistId}" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="nes-btn is-primary">
-          View Full Playlist on YouTube
-        </a>
-      </p>
     `;
+  }
+  
+  // Make functions globally available
+  window.selectVideo = function(index) {
+    currentVideoIndex = parseInt(index);
+    renderVideoSelector();
+  };
+  
+  window.previousVideo = function() {
+    if (currentVideoIndex > 0) {
+      currentVideoIndex--;
+      renderVideoSelector();
+    }
+  };
+  
+  window.nextVideo = function() {
+    if (currentVideoIndex < videos.length - 1) {
+      currentVideoIndex++;
+      renderVideoSelector();
+    }
+  };
+  
+  try {
+    renderVideoSelector();
   } catch (error) {
-    console.error('Error loading YouTube playlist:', error);
+    console.error('Error loading YouTube video selector:', error);
     youtubeContainer.innerHTML = 
       '<p>Unable to load YouTube videos at this time.</p>';
   }
@@ -265,6 +403,6 @@ async function loadYouTubePlaylist() {
 // Load content when page loads
 document.addEventListener('DOMContentLoaded', function() {
   loadRSSEpisodes();
-  loadYouTubePlaylist();
+  loadYouTubeVideoSelector();
 });
 </script>
