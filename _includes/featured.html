@@ -7,16 +7,19 @@
 {% if featured %}
 <section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
   <h2 class="nes-text is-primary" style="margin-top:0;">Featured</h2>
+  
+  <!-- Image positioned between heading and article title, full width -->
+  {% if featured.image %}
+  <a href="{{ featured.url | relative_url }}">
+    <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}" style="width:100%; height:auto; margin-bottom:1rem;">
+  </a>
+  {% else %}
+  <a href="{{ featured.url | relative_url }}">
+    <img src="/assets/images/featured-default.jpg" alt="{{ featured.title }}" style="width:100%; height:auto; margin-bottom:1rem;">
+  </a>
+  {% endif %}
+  
   <article>
-    {% if featured.image %}
-    <a href="{{ featured.url | relative_url }}">
-      <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}" style="max-width:100%; height:auto; margin-bottom:1rem;">
-    </a>
-    {% else %}
-    <a href="{{ featured.url | relative_url }}">
-      <img src="/assets/images/featured-default.jpg" alt="{{ featured.title }}" style="max-width:100%; height:auto; margin-bottom:1rem;">
-    </a>
-    {% endif %}
     <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
     <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
       <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
