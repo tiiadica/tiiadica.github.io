@@ -401,20 +401,6 @@ function loadYouTubeVideoSelector() {
           </div>
         </div>
         
-        <!-- Current Video Info -->
-        <div class="current-video-info nes-container is-rounded" style="margin-bottom: 1rem; padding: 1rem;">
-          <h3 class="nes-text is-primary" style="margin: 0 0 0.5rem 0; font-size: 1rem;">
-            Now Playing: ${currentVideo.title}
-          </h3>
-          <p style="margin: 0; font-size: 0.9rem; color: #aaa;">
-            ${currentVideo.description}
-          </p>
-          <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem; color: #888;">
-            Episode ${currentVideoIndex + 1} of ${videos.length}
-            ${isUsingFallback ? ' • <span style="color: #ff6b6b;">Demo Content</span>' : ' • <span style="color: #51cf66;">Live Playlist</span>'}
-          </p>
-        </div>
-        
         <!-- Video Embed -->
         <div class="youtube-embed" style="margin-bottom: 1rem;">
           <iframe width="100%" height="315" 
