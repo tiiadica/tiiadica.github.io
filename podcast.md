@@ -11,23 +11,23 @@ permalink: /podcast/
     <a href="https://podcasts.apple.com/us/podcast/the-royal-family-a-kansas-city-royals-podcast/id1820079888" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
       <i class="platform-icon apple-podcasts"><img width="100" height="100" alt="apple-podcasts-svgrepo-com" src="https://github.com/user-attachments/assets/24087d31-be4c-40b7-9c9e-9b1200c677ce" />
 </i>
-      <span>Apple Podcasts</span>
+      <span></span>
     </a>
     <a href="https://open.spotify.com/show/1zd8pUL40pVNVdaDTatgIm?si=479b316355d24ed1" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
       <i class="platform-icon spotify"><img width="100" height="100" alt="Spotify_Primary_Logo_RGB_White" src="https://github.com/user-attachments/assets/5e9bc637-fdef-4b1d-ab6a-4fb9fb552087" />
 </i>
-      <span>Spotify</span>
+      <span></span>
     </a>
     <a href="https://music.amazon.com/podcasts/6bb8a2da-2b90-4f9f-8e62-0ad8fdb84a46/the-royal-family---a-kansas-city-royals-podcast" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
       <i class="platform-icon amazon-music"><img width="100" height="100" alt="Untitled (83)" src="https://github.com/user-attachments/assets/8cb3f95a-fd6a-4487-93d9-78f2ccb5fc48"
  />
 </i>
-      <span>Amazon Music</span>
+      <span></span>
     </a>
     <a href="https://rss.com/podcasts/the-royal-family-kc-royals-podcast" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
       <i class="platform-icon rss"><img width="100" height="100" alt="Untitled (79)" src="https://github.com/user-attachments/assets/0582f648-462a-46b2-beb0-7b615ff05b72" />
 </i>
-      <span>RSS Feed</span>
+      <span></span>
     </a>
   </div>
 </div>
