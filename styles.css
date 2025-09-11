@@ -200,6 +200,25 @@ a.nes-btn.is-inkc,
   margin: 2rem auto 1.5rem auto;
 }
 
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Responsive sizing for hero image */
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    max-width: 85%;
+  }
+}
+
 /* Podcast page specific styles */
 .page h1.nes-text.is-primary {
   text-align: center;
