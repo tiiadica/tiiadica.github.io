@@ -346,3 +346,12 @@ a.nes-btn.is-inkc,
   color: #7AB2DD !important;
   opacity: 0.8;
 }
+
+/* Recent Posts section styling */
+#recent-posts .title {
+  color: #ffffff !important;
+}
+
+#recent-posts .small a {
+  color: #7AB2DD !important;
+}
