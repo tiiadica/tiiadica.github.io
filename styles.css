@@ -148,7 +148,7 @@ a.nes-btn.is-inkc,
 /* ROYALS button */
 .nes-btn.is-success {
   background-color: #004687 !important;
-  border-color: #004687 !important;
+  border-color: #FFFFFF !important;
   color: #fff !important;
 }
 
@@ -176,7 +176,7 @@ a.nes-btn.is-inkc,
 /* STATS button */
 .nes-btn.is-dark {
   background-color: #212529 !important;
-  border-color: #212529 !important;
+  border-color: #FFFFFF !important;
   color: #fff !important;
 }
 
