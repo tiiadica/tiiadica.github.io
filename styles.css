@@ -294,7 +294,7 @@ a.nes-btn.is-inkc,
 /* Responsive design for featured section */
 @media (max-width: 768px) {
   .featured-image {
-    height: 200px;
+    height: 500px;
   }
 }
 
