@@ -60,6 +60,12 @@ permalink: /podcast/
 .podcast-platforms {
   margin-bottom: 2rem;
   align-items: center;
+  text-align: center;
+}
+
+.podcast-platforms .title {
+  text-align: center;
+  color: #FFFFFF !important;
 }
 
 .platform-icons {

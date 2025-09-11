@@ -199,6 +199,11 @@ a.nes-btn.is-inkc,
   display: block;
   margin: 2rem auto 1.5rem auto;
 }
+
+/* Podcast page specific styles */
+.page h1.nes-text.is-primary {
+  text-align: center;
+}
 .nav {
   display: flex;
   justify-content: center;
