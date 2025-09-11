@@ -403,7 +403,7 @@ function loadYouTubeVideoSelector() {
         
         <!-- Video Embed -->
         <div class="youtube-embed" style="margin-bottom: 1rem;">
-          <iframe width="100%" height="100%" 
+          <iframe width="100%" height="700" 
             src="https://www.youtube.com/embed/${currentVideo.id}?rel=0" 
             title="${currentVideo.title}" 
             frameborder="0" 
