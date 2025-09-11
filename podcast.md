@@ -388,6 +388,16 @@ function loadYouTubeVideoSelector() {
           
           <!-- Navigation Buttons -->
           <div class="video-navigation" style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
+            <button class="nes-btn ${currentVideoIndex === 0 ? 'is-disabled' : 'is-primary'}" 
+                    onclick="previousVideo()" 
+                    ${currentVideoIndex === 0 ? 'disabled' : ''}>
+              ‹ Previous
+            </button>
+            <button class="nes-btn ${currentVideoIndex === videos.length - 1 ? 'is-disabled' : 'is-primary'}" 
+                    onclick="nextVideo()" 
+                    ${currentVideoIndex === videos.length - 1 ? 'disabled' : ''}>
+              Next ›
+            </button>
           </div>
         </div>
         
@@ -409,7 +419,7 @@ function loadYouTubeVideoSelector() {
              target="_blank" 
              rel="noopener noreferrer"
              class="nes-btn is-primary">
-            View Full Playlist On YouTube
+            View Full Playlist on YouTube
           </a>
         </p>
       </div>
