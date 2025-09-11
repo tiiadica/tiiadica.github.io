@@ -267,12 +267,13 @@ async function loadRSSEpisodes() {
   }
 }
 
-// YouTube Video Selector - Individual Video Display
+// YouTube Video Selector - Individual Video Display with API Integration
 function loadYouTubeVideoSelector() {
-  // Video data from playlist PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73
-  // TODO: Replace these placeholder videos with actual video IDs from the playlist
-  // Use the extractor tool at /tmp/youtube_playlist_extractor.html to get real data
-  const videos = [
+  const playlistId = 'PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73';
+  const youtubeContainer = document.getElementById('youtube-playlist');
+  
+  // Fallback placeholder videos in case API fails
+  const fallbackVideos = [
     {
       id: 'M7lc1UVf-VE',  // Professional placeholder - Royals Stadium
       title: 'The Royal Family Podcast - Welcome to the Show',
@@ -295,9 +296,88 @@ function loadYouTubeVideoSelector() {
     }
   ];
   
+  let videos = [];
+  let isUsingFallback = false;
+  
+  // Function to fetch playlist data using YouTube API v3 (no API key required for public playlists via JSONP)
+  async function fetchPlaylistData() {
+    try {
+      youtubeContainer.innerHTML = '<p class="loading">Loading YouTube playlist data...</p>';
+      
+      // Use YouTube's oembed API to get basic playlist info
+      const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&key=AIzaSyDummy`);
+      
+      if (!response.ok) {
+        throw new Error('YouTube API request failed');
+      }
+      
+      const data = await response.json();
+      
+      if (data.items && data.items.length > 0) {
+        videos = data.items.map(item => ({
+          id: item.snippet.resourceId.videoId,
+          title: item.snippet.title,
+          description: item.snippet.description || 'No description available.'
+        }));
+        
+        console.log(`Successfully loaded ${videos.length} videos from YouTube playlist`);
+        return true;
+      } else {
+        throw new Error('No videos found in playlist');
+      }
+      
+    } catch (error) {
+      console.warn('Unable to fetch YouTube playlist data:', error.message);
+      console.log('Falling back to placeholder content');
+      isUsingFallback = true;
+      videos = fallbackVideos;
+      return false;
+    }
+  }
+  
+  // Alternative method: Use YouTube's RSS feed for public playlists
+  async function fetchPlaylistFromRSS() {
+    try {
+      // YouTube provides RSS feeds for public playlists
+      const rssUrl = `https://www.youtube.com/feeds/videos.xml?playlist_id=${playlistId}`;
+      const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
+      
+      const response = await fetch(proxyUrl);
+      const data = await response.json();
+      
+      if (data.contents) {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
+        const entries = xmlDoc.getElementsByTagName('entry');
+        
+        if (entries.length > 0) {
+          videos = Array.from(entries).map(entry => {
+            const link = entry.getElementsByTagName('link')[0];
+            const videoId = link ? link.getAttribute('href').split('v=')[1] : '';
+            const title = entry.getElementsByTagName('title')[0]?.textContent || 'Untitled Episode';
+            const summary = entry.getElementsByTagName('summary')[0]?.textContent || 'No description available.';
+            
+            return {
+              id: videoId,
+              title: title,
+              description: summary
+            };
+          });
+          
+          console.log(`Successfully loaded ${videos.length} videos from YouTube RSS feed`);
+          return true;
+        }
+      }
+      
+      throw new Error('No entries found in RSS feed');
+      
+    } catch (error) {
+      console.warn('Unable to fetch from YouTube RSS feed:', error.message);
+      return false;
+    }
+  }
+  
   let currentVideoIndex = 0;
-  const playlistId = 'PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73';
-  const youtubeContainer = document.getElementById('youtube-playlist');
   
   function renderVideoSelector() {
     const currentVideo = videos[currentVideoIndex];
@@ -344,6 +424,7 @@ function loadYouTubeVideoSelector() {
           </p>
           <p style="margin: 0.5rem 0 0 0; font-size: 0.8rem; color: #888;">
             Episode ${currentVideoIndex + 1} of ${videos.length}
+            ${isUsingFallback ? ' • <span style="color: #ff6b6b;">Demo Content</span>' : ' • <span style="color: #51cf66;">Live Playlist</span>'}
           </p>
         </div>
         
@@ -392,13 +473,47 @@ function loadYouTubeVideoSelector() {
     }
   };
   
-  try {
-    renderVideoSelector();
-  } catch (error) {
-    console.error('Error loading YouTube video selector:', error);
-    youtubeContainer.innerHTML = 
-      '<p>Unable to load YouTube videos at this time.</p>';
+  // Initialize the video selector
+  async function initializeVideoSelector() {
+    try {
+      // First, try to fetch real playlist data
+      let success = await fetchPlaylistFromRSS();
+      
+      if (!success) {
+        console.log('RSS method failed, using fallback data');
+        isUsingFallback = true;
+        videos = fallbackVideos;
+      }
+      
+      // Display message about data source
+      if (isUsingFallback) {
+        console.log('Using placeholder content - real playlist data unavailable');
+      }
+      
+      renderVideoSelector();
+      
+    } catch (error) {
+      console.error('Error initializing YouTube video selector:', error);
+      isUsingFallback = true;
+      videos = fallbackVideos;
+      youtubeContainer.innerHTML = 
+        '<p>Unable to load YouTube videos at this time. Showing placeholder content.</p>';
+      
+      // Try to render with fallback data after a brief delay
+      setTimeout(() => {
+        try {
+          renderVideoSelector();
+        } catch (fallbackError) {
+          console.error('Error with fallback content:', fallbackError);
+          youtubeContainer.innerHTML = 
+            '<p>Unable to load YouTube videos at this time. Please try again later.</p>';
+        }
+      }, 1000);
+    }
   }
+  
+  // Start the initialization
+  initializeVideoSelector();
 }
 
 // Load content when page loads
