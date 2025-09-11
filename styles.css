@@ -355,3 +355,19 @@ a.nes-btn.is-inkc,
 #recent-posts .small a {
   color: #7AB2DD !important;
 }
+
+/* Date text styling - Set all date colors to #004687 */
+.post-date,
+time,
+.feat-meta time,
+.episode-date,
+span.post-date,
+.post-list .post-date {
+  color: #004687 !important;
+}
+
+/* Specific targeting for date spans in home page and news archive */
+.post-list .small:not(:has(a)),
+.small:not(a):not(:has(a)):not(.category-badge) {
+  color: #004687 !important;
+}
