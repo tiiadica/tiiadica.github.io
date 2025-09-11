@@ -327,22 +327,22 @@ a.nes-btn.is-inkc,
 
 /* Article links styling */
 .post-body a {
-  color: #004687 !important;
+  color: #7AB2DD !important;
 }
 
 .post-body a:hover {
-  color: #004687 !important;
+  color: #7AB2DD !important;
   opacity: 0.8;
 }
 
 /* Homepage article links and featured article titles */
 .post-list a,
 .featured-text h3 a {
-  color: #004687 !important;
+  color: #7AB2DD !important;
 }
 
 .post-list a:hover,
 .featured-text h3 a:hover {
-  color: #004687 !important;
+  color: #7AB2DD !important;
   opacity: 0.8;
 }
