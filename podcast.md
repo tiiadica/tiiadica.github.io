@@ -59,6 +59,7 @@ permalink: /podcast/
 /* Podcast-specific styles */
 .podcast-platforms {
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .platform-icons {
