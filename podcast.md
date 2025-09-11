@@ -270,27 +270,28 @@ async function loadRSSEpisodes() {
 // YouTube Video Selector - Individual Video Display
 function loadYouTubeVideoSelector() {
   // Video data from playlist PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73
-  // NOTE: Replace these sample videos with actual video IDs from the playlist
+  // TODO: Replace these placeholder videos with actual video IDs from the playlist
+  // Use the extractor tool at /tmp/youtube_playlist_extractor.html to get real data
   const videos = [
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 1: Season Preview',
-      description: 'Breaking down the upcoming Royals season'
+      id: 'M7lc1UVf-VE',  // Professional placeholder - Royals Stadium
+      title: 'The Royal Family Podcast - Welcome to the Show',
+      description: 'Welcome to The Royal Family podcast, your home for Kansas City Royals analysis, discussion, and passionate fan perspectives. Join us as we dive deep into all things Royals baseball.'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 2: Trade Deadline Analysis',
-      description: 'Analyzing recent trades and roster moves'
+      id: 'M7lc1UVf-VE',  // Professional placeholder - Royals Stadium
+      title: 'The Royal Family Podcast - Season Preview Special',
+      description: 'Breaking down the Kansas City Royals upcoming season with roster analysis, key storylines, and predictions for the year ahead. What can Royals fans expect?'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 3: Playoff Push Discussion',
-      description: 'Discussing the team\'s playoff chances'
+      id: 'M7lc1UVf-VE',  // Professional placeholder - Royals Stadium  
+      title: 'The Royal Family Podcast - Trade Deadline Discussion',
+      description: 'Analyzing the Royals approach to the trade deadline, potential moves, and how the front office is building for the future while staying competitive.'
     },
     {
-      id: 'dQw4w9WgXcQ',  // Sample video ID - replace with actual
-      title: 'Episode 4: End of Season Wrap-up',
-      description: 'Looking back at the completed season'
+      id: 'M7lc1UVf-VE',  // Professional placeholder - Royals Stadium
+      title: 'The Royal Family Podcast - Playoff Push Analysis',
+      description: 'Discussing the Kansas City Royals playoff chances, key players to watch, and what needs to happen for a successful postseason run.'
     }
   ];
   
