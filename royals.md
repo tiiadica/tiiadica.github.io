@@ -4,7 +4,6 @@ title: Royals
 permalink: /royals/
 ---
 
-<h1>Royals Posts</h1>
 <p>Posts tagged with the 'Royals' category.</p>
 <ul>
 {% for post in site.categories.Royals %}

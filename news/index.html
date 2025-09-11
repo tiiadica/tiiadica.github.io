@@ -4,7 +4,9 @@ title: "News Archive"
 permalink: /news/
 ---
 <main class="wrap">
-  <h1 class="nes-text is-primary">News Archive</h1>
+  <a href="/">
+    <img src="{{ '/assets/images/Untitled (86).png' | relative_url }}" alt="The Royal Family" class="header-image">
+  </a>
   {% if paginator.posts and paginator.posts.size > 0 %}
     <ul class="post-list">
       {% for post in paginator.posts %}

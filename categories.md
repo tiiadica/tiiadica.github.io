@@ -4,7 +4,6 @@ title: Categories
 permalink: /categories/
 ---
 
-<h1>Categories</h1>
 <p>Browse all categories used on the site.</p>
 <ul class="category-list">
 {% assign cats = site.categories | sort %}

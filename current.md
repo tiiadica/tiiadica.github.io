@@ -4,7 +4,6 @@ title: Current
 permalink: /categories/current/
 ---
 
-<h1>KC Current Posts</h1>
 <p>Posts about Kansas City Current and women's professional soccer.</p>
 <ul>
 {% for post in site.categories.current %}
