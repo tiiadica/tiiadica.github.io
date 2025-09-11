@@ -4,10 +4,6 @@ title: "The Royal Family Podcast"
 permalink: /podcast/
 ---
 
-<div class="podcast-intro">
-  <p>Welcome to The Royal Family podcast - your ultimate destination for Kansas City Royals analysis, discussions, and passionate fan perspectives!</p>
-</div>
-
 <!-- Platform Links -->
 <div class="podcast-platforms nes-container is-rounded">
   <p class="title">Listen on Your Favorite Platform</p>
@@ -56,11 +52,6 @@ permalink: /podcast/
 
 <style>
 /* Podcast-specific styles */
-.podcast-intro {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
 .podcast-platforms {
   margin-bottom: 2rem;
 }
