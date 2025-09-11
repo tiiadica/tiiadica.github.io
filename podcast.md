@@ -6,7 +6,7 @@ permalink: /podcast/
 
 <!-- Platform Links -->
 <div class="podcast-platforms nes-container is-rounded">
-  <p class="title">Listen on Your Favorite Platform</p>
+  <p class="title">Available Wherever You Get Your Podcasts</p>
   <div class="platform-icons">
     <a href="https://podcasts.apple.com/us/podcast/the-royal-family-a-kansas-city-royals-podcast/id1820079888" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
       <i class="platform-icon apple-podcasts"><img width="100" height="100" alt="apple-podcasts-svgrepo-com" src="https://github.com/user-attachments/assets/24087d31-be4c-40b7-9c9e-9b1200c677ce" />
@@ -126,11 +126,6 @@ permalink: /podcast/
 .episode-date {
   font-size: 0.8rem;
   color: #aaa;
-  margin-bottom: 0.5rem;
-}
-
-.episode-description {
-  font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
