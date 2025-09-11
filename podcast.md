@@ -8,8 +8,9 @@ permalink: /podcast/
 <div class="podcast-platforms nes-container is-rounded">
   <p class="title">Listen on Your Favorite Platform</p>
   <div class="platform-icons">
-    <a href="https://podcasts.apple.com/us/podcast/the-royal-family-kc-royals-podcast/id1234567890" class="platform-link" title="Apple Podcasts" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon apple-podcasts">🎧</i>
+    <a href="https://podcasts.apple.com/us/podcast/the-royal-family-a-kansas-city-royals-podcast/id1820079888" class="platform-link" title="Apple Podcasts" target="_blank" rel="noopener noreferrer">
+      <i class="platform-icon apple-podcasts"><img width="100" height="100" alt="apple-podcasts-svgrepo-com" src="https://github.com/user-attachments/assets/24087d31-be4c-40b7-9c9e-9b1200c677ce" />
+</i>
       <span>Apple Podcasts</span>
     </a>
     <a href="https://open.spotify.com/show/1zd8pUL40pVNVdaDTatgIm?si=479b316355d24ed1" class="platform-link" title="Spotify" target="_blank" rel="noopener noreferrer">
@@ -17,8 +18,9 @@ permalink: /podcast/
 </i>
       <span>Spotify</span>
     </a>
-    <a href="https://music.amazon.com/podcasts/1234567890" class="platform-link" title="Amazon Music" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon amazon-music">🎵</i>
+    <a href="https://music.amazon.com/podcasts/6bb8a2da-2b90-4f9f-8e62-0ad8fdb84a46/the-royal-family---a-kansas-city-royals-podcast" class="platform-link" title="Amazon Music" target="_blank" rel="noopener noreferrer">
+      <i class="platform-icon amazon-music"><img width="100" height="100" alt="Untitled (81)" src="https://github.com/user-attachments/assets/014afdbd-2e8c-4bc3-9169-9eb48c31abe2" />
+</i>
       <span>Amazon Music</span>
     </a>
     <a href="https://rss.com/podcasts/the-royal-family-kc-royals-podcast" class="platform-link" title="RSS Feed" target="_blank" rel="noopener noreferrer">
