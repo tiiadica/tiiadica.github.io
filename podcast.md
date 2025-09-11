@@ -157,17 +157,7 @@ permalink: /podcast/
   max-width: 100%;
 }
 
-.video-navigation {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
 
-.video-navigation .nes-btn {
-  min-width: 100px;
-  font-size: 0.9rem;
-}
 
 .current-video-info {
   background: rgba(255, 255, 255, 0.05);
@@ -200,11 +190,6 @@ permalink: /podcast/
   
   .platform-icon {
     font-size: 1.5rem;
-  }
-  
-  .video-navigation .nes-btn {
-    min-width: 80px;
-    font-size: 0.8rem;
   }
 }
 </style>
@@ -398,19 +383,7 @@ function loadYouTubeVideoSelector() {
             </select>
           </div>
           
-          <!-- Navigation Buttons -->
-          <div class="video-navigation" style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
-            <button class="nes-btn ${currentVideoIndex === 0 ? 'is-disabled' : 'is-primary'}" 
-                    onclick="previousVideo()" 
-                    ${currentVideoIndex === 0 ? 'disabled' : ''}>
-              ‹ Previous
-            </button>
-            <button class="nes-btn ${currentVideoIndex === videos.length - 1 ? 'is-disabled' : 'is-primary'}" 
-                    onclick="nextVideo()" 
-                    ${currentVideoIndex === videos.length - 1 ? 'disabled' : ''}>
-              Next ›
-            </button>
-          </div>
+
         </div>
         
         <!-- Video Embed -->
