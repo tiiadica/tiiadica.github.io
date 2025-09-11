@@ -1,5 +1,7 @@
-.hero.nes-text.is-primary {
-  color: #7AB2DD !important;
+.hero.nes-text.is-primary,
+h1.nes-text.is-primary,
+h2.nes-text.is-primary {
+  color: #004687 !important;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
@@ -77,7 +79,7 @@ a.nes-btn.is-inkc,
 .nes-btn.is-world:focus,
 .nes-btn.is-inkc:focus {
   box-shadow:
-    0 0.25em 0 #7AB2DD !important,
+    0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
 }
 
@@ -118,7 +120,7 @@ a.nes-btn.is-inkc,
 .nes-btn.is-dark:active,
 .nes-btn.is-dark:focus {
   box-shadow:
-    0 0.25em 0 #7AB2DD !important,
+    0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
 }
 
@@ -161,8 +163,8 @@ a.nes-btn.is-inkc,
 
 /* SUPPORT KC button */
 .nes-btn.is-error {
-  background-color: #7AB2DD !important;
-  border-color: #7AB2DD !important;
+  background-color: #004687 !important;
+  border-color: #004687 !important;
   color: #fff !important;
 }
 
@@ -231,30 +233,30 @@ a.nes-btn.is-inkc,
 }
 
 /* Override NES.css ::after pseudo-element shadows with per-button accent colors */
-.nes-btn.is-success::after { box-shadow: inset -4px -4px #7AB2DD !important; }
+.nes-btn.is-success::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-warning::after { box-shadow: inset -4px -4px #62cbc9 !important; }
 .nes-btn.is-error::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-disabled::after { box-shadow: inset -4px -4px #CF3339 !important; }
-.nes-btn.is-dark::after { box-shadow: inset -4px -4px #7AB2DD !important; }
+.nes-btn.is-dark::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-world::after { box-shadow: inset -4px -4px #E4312b !important; }
 .nes-btn.is-inkc::after { box-shadow: inset -4px -4px #004687 !important; }
 
-.nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
+.nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-warning:hover::after { box-shadow: inset -6px -6px #62cbc9 !important; }
 .nes-btn.is-error:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-disabled:hover::after { box-shadow: inset -6px -6px #CF3339 !important; }
-.nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
+.nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-world:hover::after { box-shadow: inset -6px -6px #E4312b !important; }
 .nes-btn.is-inkc:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 
-.nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
+.nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-warning:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #62cbc9 !important; }
 .nes-btn.is-error:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-disabled:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #CF3339 !important; }
-.nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
+.nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-world:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #E4312b !important; }
 .nes-btn.is-inkc:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 
@@ -301,4 +303,48 @@ a.nes-btn.is-inkc,
 /* Center align page headers */
 .page h1.nes-text.is-primary {
   text-align: center;
+}
+
+/* Article body text styling for better readability */
+.post-body,
+.post-body p,
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6,
+.post-body li,
+.post-body blockquote,
+.post-body em,
+.post-body strong {
+  color: #ffffff !important;
+}
+
+/* Featured article content text styling */
+.featured-content p,
+.featured-text p {
+  color: #ffffff !important;
+}
+
+/* Article links styling */
+.post-body a {
+  color: #004687 !important;
+}
+
+.post-body a:hover {
+  color: #004687 !important;
+  opacity: 0.8;
+}
+
+/* Homepage article links and featured article titles */
+.post-list a,
+.featured-text h3 a {
+  color: #004687 !important;
+}
+
+.post-list a:hover,
+.featured-text h3 a:hover {
+  color: #004687 !important;
+  opacity: 0.8;
 }
