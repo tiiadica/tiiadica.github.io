@@ -1,4 +1,6 @@
-.hero.nes-text.is-primary {
+.hero.nes-text.is-primary,
+h1.nes-text.is-primary,
+h2.nes-text.is-primary {
   color: #004687 !important;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
@@ -331,7 +333,8 @@ a.nes-btn.is-inkc,
 }
 
 .post-body a:hover {
-  color: #7AB2DD !important;
+  color: #004687 !important;
+  opacity: 0.8;
 }
 
 /* Homepage article links and featured article titles */
@@ -342,5 +345,6 @@ a.nes-btn.is-inkc,
 
 .post-list a:hover,
 .featured-text h3 a:hover {
-  color: #7AB2DD !important;
+  color: #004687 !important;
+  opacity: 0.8;
 }
