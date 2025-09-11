@@ -62,6 +62,11 @@ permalink: /podcast/
   align-items: center;
 }
 
+.podcast-platforms .title {
+  text-align: center;
+  color: #FFFFFF !important;
+}
+
 .platform-icons {
   display: flex;
   justify-content: center;

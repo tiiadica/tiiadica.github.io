@@ -268,3 +268,8 @@ a.nes-btn.is-inkc,
     height: 200px;
   }
 }
+
+/* Center align page headers */
+.page h1.nes-text.is-primary {
+  text-align: center;
+}
