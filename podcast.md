@@ -13,7 +13,8 @@ permalink: /podcast/
       <span>Apple Podcasts</span>
     </a>
     <a href="https://open.spotify.com/show/1234567890" class="platform-link" title="Spotify" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon spotify">🎵</i>
+      <i class="platform-icon spotify"><img width="939" height="940" alt="Spotify_Primary_Logo_RGB_White" src="https://github.com/user-attachments/assets/5e9bc637-fdef-4b1d-ab6a-4fb9fb552087" />
+</i>
       <span>Spotify</span>
     </a>
     <a href="https://music.amazon.com/podcasts/1234567890" class="platform-link" title="Amazon Music" target="_blank" rel="noopener noreferrer">
