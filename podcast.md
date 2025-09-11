@@ -19,8 +19,7 @@ permalink: /podcast/
       <span>Spotify</span>
     </a>
     <a href="https://music.amazon.com/podcasts/6bb8a2da-2b90-4f9f-8e62-0ad8fdb84a46/the-royal-family---a-kansas-city-royals-podcast" class="platform-link" title="Amazon Music" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon amazon-music"><img width="100" height="100" alt="Untitled (83)" src="https://github.com/user-attachments/assets/8cb3f95a-fd6a-4487-93d9-78f2ccb5fc48" />
- />
+      <i class="platform-icon amazon-music"><img width="100" height="100" alt="Untitled (83)" src="https://github.com/user-attachments/assets/8cb3f95a-fd6a-4487-93d9-78f2ccb5fc48"
  />
 </i>
       <span>Amazon Music</span>
