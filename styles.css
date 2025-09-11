@@ -285,6 +285,11 @@ a.nes-btn.is-inkc,
 .featured-text {
   width: 100%;
 }
+.header-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 /* Responsive design for featured section */
 @media (max-width: 768px) {
