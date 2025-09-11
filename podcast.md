@@ -227,20 +227,16 @@ async function loadRSSEpisodes() {
     
     episodeArray.slice(0, 10).forEach(({ item }) => {
       const title = item.querySelector('title')?.textContent || 'Untitled Episode';
-      const description = item.querySelector('description')?.textContent || '';
       const pubDate = item.querySelector('pubDate')?.textContent || '';
       const enclosure = item.querySelector('enclosure');
       const audioUrl = enclosure?.getAttribute('url') || '';
       
       const date = new Date(pubDate).toLocaleDateString();
-      const shortDescription = description.length > 150 ? 
-        description.substring(0, 150) + '...' : description;
       
       episodesHTML += `
         <div class="episode-item">
           <div class="episode-title">${title}</div>
           <div class="episode-date">${date}</div>
-          <div class="episode-description">${shortDescription}</div>
           ${audioUrl ? `<audio controls style="width: 100%; margin-top: 0.5rem;">
             <source src="${audioUrl}" type="audio/mpeg">
             Your browser does not support the audio element.
