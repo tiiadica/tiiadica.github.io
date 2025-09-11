@@ -231,30 +231,30 @@ a.nes-btn.is-inkc,
 }
 
 /* Override NES.css ::after pseudo-element shadows with per-button accent colors */
-.nes-btn.is-success::after { box-shadow: inset -4px -4px #004687 !important; }
-.nes-btn.is-primary::after { box-shadow: inset -4px -4px #FFFFFF !important; }
+.nes-btn.is-success::after { box-shadow: inset -4px -4px #FFFFFF !important; }
+.nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-warning::after { box-shadow: inset -4px -4px #62cbc9 !important; }
 .nes-btn.is-error::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-disabled::after { box-shadow: inset -4px -4px #CF3339 !important; }
-.nes-btn.is-dark::after { box-shadow: inset -4px -4px #004687 !important; }
+.nes-btn.is-dark::after { box-shadow: inset -4px -4px #FFFFFF !important; }
 .nes-btn.is-world::after { box-shadow: inset -4px -4px #E4312b !important; }
 .nes-btn.is-inkc::after { box-shadow: inset -4px -4px #004687 !important; }
 
-.nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #004687 !important; }
-.nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #FFFFFF !important; }
+.nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #FFFFFF !important; }
+.nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-warning:hover::after { box-shadow: inset -6px -6px #62cbc9 !important; }
 .nes-btn.is-error:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-disabled:hover::after { box-shadow: inset -6px -6px #CF3339 !important; }
-.nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #004687 !important; }
+.nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #FFFFFF !important; }
 .nes-btn.is-world:hover::after { box-shadow: inset -6px -6px #E4312b !important; }
 .nes-btn.is-inkc:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 
-.nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
-.nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFFFFF !important; }
+.nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFFFFF !important; }
+.nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-warning:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #62cbc9 !important; }
 .nes-btn.is-error:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-disabled:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #CF3339 !important; }
-.nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
+.nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFFFFF !important; }
 .nes-btn.is-world:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #E4312b !important; }
 .nes-btn.is-inkc:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 
