@@ -1,30 +1,10 @@
-{% assign featured_posts = site.posts | where_exp: "p","p.featured == true" %}
-{% if featured_posts and featured_posts.size > 0 %}
-  {% assign featured = featured_posts.first %}
-{% else %}
-  {% assign featured = site.posts.first %}
-{% endif %}
-{% if featured %}
-<section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
-  <h2 class="nes-text is-primary" style="margin-top:0;">Featured</h2>
-  {% assign featured_image = featured.image | default: "/assets/images/featured-default.jpg" %}
-  <div class="featured-image-container">
-    <a href="{{ featured.url | relative_url }}">
-      <img src="{{ featured_image | relative_url }}" alt="{{ featured.title }}" class="featured-image">
-    </a>
-  </div>
-  <article class="featured-content">
-    <div class="featured-text">
-      <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
-      <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
-        <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
-        {% for c in featured.categories %}
-          {% include category-badge.html category=c %}
-        {% endfor %}
-        {% if featured.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
-      </div>
-      <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
+<section class="featured-article">
+  <h2>Featured Article</h2>
+  <div class="article-preview">
+    <img src="latest-post-image-url.jpg" alt="Latest Post Image" />
+    <div class="content-preview">
+      <h3><a href="latest-post-url">Title of the Latest Post</a></h3>
+      <p>This is a short preview of the latest post content...</p>
     </div>
-  </article>
+  </div>
 </section>
-{% endif %}
