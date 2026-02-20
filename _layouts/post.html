@@ -1,37 +1,21 @@
----
-layout: default
----
-<main class="wrap post-page">
-  <article class="post">
-    <header>
-      <a href="/">
-        <img src="{{ '/assets/images/Untitled (86).png' | relative_url }}" alt="The Royal Family" class="header-image">
-      </a>
-      <h1 class="nes-text is-primary">{{ page.title }}</h1>
-      <div class="post-meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-        {% if page.categories %}
-          {% for c in page.categories %}
-            {% include category-badge.html category=c %}
-          {% endfor %}
-        {% endif %}
-        {% if page.author %}<span class="author">By {{ page.author | capitalize }}</span>{% endif %}
-        {% if page.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
-      </div>
-      {% if page.image %}
-        <figure class="feature-image">
-          <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}">
-        </figure>
-      {% endif %}
-    </header>
-    <div class="post-body">
-      {{ content }}
-    </div>
-    <footer class="post-footer">
-      <nav class="post-nav">
-        {% if page.previous %}<a class="nes-btn" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>{% endif %}
-        {% if page.next %}<a class="nes-btn" href="{{ page.next.url }}">{{ page.next.title }} →</a>{% endif %}
-      </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">Posted on {{ page.date }}</p>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+    <footer>
+        <p>© {{ site.time | date: '%Y' }} Your Blog Name</p>
     </footer>
-  </article>
-</main>
+</body>
+</html>
