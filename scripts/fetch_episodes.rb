@@ -68,17 +68,19 @@ def fetch_youtube_videos
     
     videos = []
     
-    # YouTube uses namespaces, so we need to handle them
-    doc.xpath('//yt:videoId', 'yt' => 'http://www.youtube.com/xml/schemas/rss/2.0/video-objects.xsd').each do |video_id_node|
-      video_id = video_id_node.text
+    # Register the namespace
+    doc.root.namespace_definitions.each { |ns| doc.root.add_namespace(ns.prefix, ns.uri) }
+    
+    # Parse entries - YouTube uses atom:entry
+    doc.xpath('//atom:entry', 'atom' => 'http://www.w3.org/2005/Atom').each do |entry|
+      # Get video ID from yt:videoId element
+      video_id_node = entry.xpath('yt:videoId', 'yt' => 'http://www.youtube.com/xml/schemas/2015').first
+      next unless video_id_node
       
-      # Find the corresponding entry to get the title
-      entry = video_id_node.ancestors('entry').first
-      next unless entry
+      video_id = video_id_node.text.strip
+      title = entry.xpath('atom:title', 'atom' => 'http://www.w3.org/2005/Atom').first&.text
       
-      title = entry.xpath('title').text
-      
-      next if video_id.nil? || video_id.empty? || title.empty?
+      next if video_id.empty? || title.nil? || title.empty?
       
       videos << {
         'id' => video_id,
