@@ -4,7 +4,7 @@ title: Support KC
 permalink: /categories/supportkc/
 ---
 
-<p>Posts about supporting Kansas City sports teams and community.</p>
+{% include featured-by-category.html category="supportkc" %}
 <ul>
 {% for post in site.categories.supportkc %}
   <li>
