@@ -67,10 +67,16 @@ def fetch_youtube_videos
     doc = Nokogiri::XML(response)
     
     videos = []
-    doc.xpath('//entry').each do |entry|
+    
+    # YouTube uses namespaces, so we need to handle them
+    doc.xpath('//yt:videoId', 'yt' => 'http://www.youtube.com/xml/schemas/rss/2.0/video-objects.xsd').each do |video_id_node|
+      video_id = video_id_node.text
+      
+      # Find the corresponding entry to get the title
+      entry = video_id_node.ancestors('entry').first
+      next unless entry
+      
       title = entry.xpath('title').text
-      link = entry.xpath('link/@href').text
-      video_id = link.match(/v=([^&]+)/)&.[](1)
       
       next if video_id.nil? || video_id.empty? || title.empty?
       
@@ -79,6 +85,8 @@ def fetch_youtube_videos
         'title' => title
       }
     end
+    
+    puts "Found #{videos.length} videos in feed"
     
     # Create _data directory if it doesn't exist
     FileUtils.mkdir_p(DATA_DIR)
