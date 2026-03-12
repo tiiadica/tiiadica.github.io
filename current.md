@@ -3,7 +3,7 @@ layout: page
 title: Current
 permalink: /categories/current/
 ---
-{% include featured-by-category.html category="Current" %}
+{% include featured-by-category.html category="current" %}
 <ul>
 {% for post in site.categories.current %}
   <li>
