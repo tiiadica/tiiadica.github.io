@@ -326,8 +326,8 @@ fetch('/podcast_videos.json')
         }
       });
       
-      // Load first video
-      displayVideo(0);
+     // Load first video (most recent)
+displayVideo(videos.length - 1);
     }
   })
   .catch(error => {
