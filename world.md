@@ -4,7 +4,7 @@ title: World
 permalink: /categories/world/
 ---
 
-<p>Posts about international sports and global sporting events.</p>
+{% include featured-by-category.html category="world" %}
 <ul>
 {% for post in site.categories.world %}
   <li>
