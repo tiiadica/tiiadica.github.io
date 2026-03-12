@@ -29,24 +29,12 @@ jobs:
       - name: Fetch podcast episodes
         run: ruby scripts/fetch_episodes.rb
       
-            - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          if git diff --quiet; then
-            echo "No changes to commit"
-          else
-            git add _data/
-            git commit -m "Update podcast episodes (automated)"
-            git push
-          fi
-      
       - name: Copy JSON files to public directory
         run: |
           cp _data/podcast_episodes.json podcast_episodes.json
           cp _data/podcast_videos.json podcast_videos.json
       
-      - name: Commit public JSON files
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
