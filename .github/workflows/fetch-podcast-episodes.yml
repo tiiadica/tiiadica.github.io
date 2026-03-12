@@ -3,7 +3,7 @@ name: Fetch Podcast Episodes
 on:
   push:
     branches:
-      - main
+      - Main
   schedule:
     - cron: '0 0 * * *'
 
