@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Global Sports Roundup: Top Stories from Around the World"
+title: "The Dominican Republic Have 'The Dream Team'"
 date: 2026-03-12
 categories: [World]
 featured: true
