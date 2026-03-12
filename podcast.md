@@ -243,26 +243,6 @@ fetch('/podcast_videos.json')
       selectorDiv.appendChild(label);
       selectorDiv.appendChild(selectDiv);
       
-      // Create navigation buttons
-      const navDiv = document.createElement('div');
-      navDiv.className = 'video-navigation';
-      navDiv.style.display = 'flex';
-      navDiv.style.gap = '0.5rem';
-      navDiv.style.justifyContent = 'center';
-      navDiv.style.marginBottom = '1rem';
-      
-      const prevBtn = document.createElement('button');
-      prevBtn.className = 'nes-btn is-primary';
-      prevBtn.textContent = '‹ Previous';
-      
-      const nextBtn = document.createElement('button');
-      nextBtn.className = 'nes-btn is-primary';
-      nextBtn.textContent = 'Next ›';
-      
-      navDiv.appendChild(prevBtn);
-      navDiv.appendChild(nextBtn);
-      selectorDiv.appendChild(navDiv);
-      
       // Create video embed
       const embedDiv = document.createElement('div');
       embedDiv.className = 'youtube-embed';
@@ -312,18 +292,6 @@ fetch('/podcast_videos.json')
       
       select.addEventListener('change', (e) => {
         displayVideo(parseInt(e.target.value));
-      });
-      
-      prevBtn.addEventListener('click', () => {
-        if (currentVideoIndex > 0) {
-          displayVideo(currentVideoIndex - 1);
-        }
-      });
-      
-      nextBtn.addEventListener('click', () => {
-        if (currentVideoIndex < data.videos.length - 1) {
-          displayVideo(currentVideoIndex + 1);
-        }
       });
       
      // Load first video (most recent)
