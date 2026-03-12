@@ -3,6 +3,15 @@ layout: page
 title: Current
 permalink: /categories/current/
 ---
+<div class="nav">
+  <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
+  <a class="nes-btn is-success" href="/royals/">ROYALS</a>
+  <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
+  <a class="nes-btn is-world" href="/categories/world/">WORLD</a>
+  <a class="nes-btn is-inkc" href="/categories/supportkc/">IN KC</a>
+  <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
+</div>
+
 {% include featured-by-category.html category="current" %}
 <section id="recent-posts" class="nes-container is-rounded" style="margin-bottom:1rem;">
   <p class="title">Recent Posts</p>
