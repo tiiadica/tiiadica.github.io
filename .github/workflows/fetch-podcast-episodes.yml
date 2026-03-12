@@ -1,1 +1,39 @@
+name: Fetch Podcast Episodes
 
+on:
+  push:
+    branches: [ Main ]
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+jobs:
+  fetch-episodes:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+      
+      - name: Install dependencies
+        run: |
+          gem install nokogiri
+      
+      - name: Fetch podcast episodes
+        run: ruby scripts/fetch_episodes.rb
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add _data/
+            git commit -m "Update podcast episodes (automated)"
+            git push
+          fi
