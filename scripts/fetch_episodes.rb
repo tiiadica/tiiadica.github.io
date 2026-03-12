@@ -78,14 +78,22 @@ def fetch_youtube_videos
     doc.xpath('//atom:entry', namespaces).each do |entry|
       video_id = entry.xpath('yt:videoId', namespaces).first&.text&.strip
       title = entry.xpath('atom:title', namespaces).first&.text&.strip
+      pub_date = entry.xpath('atom:published', namespaces).first&.text&.strip
       
       next if video_id.nil? || video_id.empty? || title.nil? || title.empty?
       
       videos << {
         'id' => video_id,
-        'title' => title
+        'title' => title,
+        'published' => pub_date
       }
     end
+    
+    # Sort by published date (most recent first)
+    videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }.reverse
+    
+    # Remove the published date from the final JSON (optional, just keep id and title)
+    videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
     
     puts "Found #{videos.length} videos in feed"
     
