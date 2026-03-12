@@ -4,7 +4,7 @@ title: Royals
 permalink: /royals/
 ---
 
-{% include featured-by-category.html category="royals" %}
+{% include featured-by-category.html category="Royals" %}
 <ul>
 {% for post in site.categories.Royals %}
   <li>
