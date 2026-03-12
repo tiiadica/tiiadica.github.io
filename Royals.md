@@ -5,14 +5,6 @@ permalink: /royals/
 ---
 
 {% include featured-by-category.html category="Royals" %}
-<ul>
-{% for post in site.categories.Royals %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-  </li>
-{% endfor %}
-</ul>
 <section id="recent-posts" class="nes-container is-rounded" style="margin-bottom:1rem;">
   <p class="title">Recent Posts</p>
   {% if site.posts.size == 0 %}
