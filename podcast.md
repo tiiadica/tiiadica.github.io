@@ -213,7 +213,7 @@ permalink: /podcast/
 // RSS Feed Parser for Audio Episodes
 async function loadRSSEpisodes() {
   const rssUrl = 'https://media.rss.com/the-royal-family-kc-royals-podcast/feed.xml';
-  const proxyUrl = 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(rssUrl);
+  const proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(rssUrl);
   
   try {
     const response = await fetch(proxyUrl);
