@@ -255,4 +255,3 @@ document.addEventListener('DOMContentLoaded', function() {
   displayVideo(0);
 });
 </script>
-</script>
