@@ -35,22 +35,7 @@ permalink: /podcast/
     <div class="audio-episodes nes-container is-rounded">
       <h2 class="nes-text is-primary">Audio Episodes</h2>
       <div id="audio-episodes-list">
-        {% if site.data.podcast_episodes %}
-          {% for episode in site.data.podcast_episodes.episodes %}
-            <div class="episode-item">
-              <div class="episode-title">{{ episode.title }}</div>
-              <div class="episode-date">{{ episode.date | date: "%B %d, %Y" }}</div>
-              {% if episode.audioUrl %}
-                <audio controls style="width: 100%; margin-top: 0.5rem;">
-                  <source src="{{ episode.audioUrl }}" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              {% endif %}
-            </div>
-          {% endfor %}
-        {% else %}
-          <p>Loading episodes...</p>
-        {% endif %}
+        <p>Loading episodes...</p>
       </div>
     </div>
     
@@ -58,51 +43,7 @@ permalink: /podcast/
     <div class="youtube-episodes nes-container is-rounded">
       <h2 class="nes-text is-primary">YouTube Episodes</h2>
       <div id="youtube-episodes-list">
-        {% if site.data.podcast_videos %}
-          <!-- Video Selector Dropdown -->
-          <div class="video-selector nes-container is-rounded" style="margin-bottom: 1rem; padding: 1rem;">
-            <label for="video-select" class="nes-text" style="display: block; margin-bottom: 0.5rem;">
-              Select Episode:
-            </label>
-            <div class="nes-select" style="margin-bottom: 0.5rem;">
-              <select id="video-select" onchange="selectVideo(this.value)">
-                {% for video in site.data.podcast_videos.videos %}
-                  <option value="{{ forloop.index0 }}">{{ video.title }}</option>
-                {% endfor %}
-              </select>
-            </div>
-            
-            <!-- Navigation Buttons -->
-            <div class="video-navigation" style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1rem;">
-              <button class="nes-btn is-primary" onclick="previousVideo()">‹ Previous</button>
-              <button class="nes-btn is-primary" onclick="nextVideo()">Next ›</button>
-            </div>
-          </div>
-          
-          <!-- Video Embed -->
-          <div class="youtube-embed" style="margin-bottom: 1rem;">
-            <iframe id="video-player" width="100%" height="500" 
-              src="" 
-              title="YouTube Video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen
-              style="border-radius: 4px;">
-            </iframe>
-          </div>
-          
-          <!-- Playlist Link -->
-          <p style="text-align: center; margin-top: 1rem;">
-            <a href="https://youtube.com/playlist?list=PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="nes-btn is-primary">
-              View Full Playlist on YouTube
-            </a>
-          </p>
-        {% else %}
-          <p>Loading videos...</p>
-        {% endif %}
+        <p>Loading videos...</p>
       </div>
     </div>
     
@@ -216,42 +157,181 @@ permalink: /podcast/
 </style>
 
 <script>
-// YouTube video selector
-const videoData = {{ site.data.podcast_videos | jsonify }};
-let currentVideoIndex = 0;
+// Fetch and load audio episodes
+fetch('/podcast_episodes.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('audio-episodes-list');
+    container.innerHTML = '';
+    
+    if (data.episodes && data.episodes.length > 0) {
+      data.episodes.forEach(episode => {
+        const episodeDiv = document.createElement('div');
+        episodeDiv.className = 'episode-item';
+        
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'episode-title';
+        titleDiv.textContent = episode.title;
+        
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'episode-date';
+        const date = new Date(episode.date);
+        dateDiv.textContent = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        
+        episodeDiv.appendChild(titleDiv);
+        episodeDiv.appendChild(dateDiv);
+        
+        if (episode.audioUrl) {
+          const audio = document.createElement('audio');
+          audio.controls = true;
+          audio.style.width = '100%';
+          audio.style.marginTop = '0.5rem';
+          
+          const source = document.createElement('source');
+          source.src = episode.audioUrl;
+          source.type = 'audio/mpeg';
+          
+          audio.appendChild(source);
+          episodeDiv.appendChild(audio);
+        }
+        
+        container.appendChild(episodeDiv);
+      });
+    }
+  })
+  .catch(error => {
+    console.error('Error loading episodes:', error);
+    document.getElementById('audio-episodes-list').innerHTML = '<p>Error loading episodes</p>';
+  });
 
-function displayVideo(index) {
-  if (videoData && videoData.videos && videoData.videos[index]) {
-    const video = videoData.videos[index];
-    const iframe = document.getElementById('video-player');
-    iframe.src = `https://www.youtube.com/embed/${video.id}?rel=0`;
-    iframe.title = video.title;
-  }
-}
-
-window.selectVideo = function(index) {
-  currentVideoIndex = parseInt(index);
-  displayVideo(currentVideoIndex);
-};
-
-window.previousVideo = function() {
-  if (currentVideoIndex > 0) {
-    currentVideoIndex--;
-    document.getElementById('video-select').value = currentVideoIndex;
-    displayVideo(currentVideoIndex);
-  }
-};
-
-window.nextVideo = function() {
-  if (videoData && videoData.videos && currentVideoIndex < videoData.videos.length - 1) {
-    currentVideoIndex++;
-    document.getElementById('video-select').value = currentVideoIndex;
-    displayVideo(currentVideoIndex);
-  }
-};
-
-// Initialize video player on page load
-document.addEventListener('DOMContentLoaded', function() {
-  displayVideo(0);
-});
+// Fetch and load YouTube videos
+fetch('/podcast_videos.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('youtube-episodes-list');
+    container.innerHTML = '';
+    
+    if (data.videos && data.videos.length > 0) {
+      // Create video selector
+      const selectorDiv = document.createElement('div');
+      selectorDiv.className = 'video-selector nes-container is-rounded';
+      selectorDiv.style.marginBottom = '1rem';
+      selectorDiv.style.padding = '1rem';
+      
+      const label = document.createElement('label');
+      label.htmlFor = 'video-select';
+      label.className = 'nes-text';
+      label.style.display = 'block';
+      label.style.marginBottom = '0.5rem';
+      label.textContent = 'Select Episode:';
+      
+      const selectDiv = document.createElement('div');
+      selectDiv.className = 'nes-select';
+      selectDiv.style.marginBottom = '0.5rem';
+      
+      const select = document.createElement('select');
+      select.id = 'video-select';
+      
+      data.videos.forEach((video, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = video.title;
+        select.appendChild(option);
+      });
+      
+      selectDiv.appendChild(select);
+      selectorDiv.appendChild(label);
+      selectorDiv.appendChild(selectDiv);
+      
+      // Create navigation buttons
+      const navDiv = document.createElement('div');
+      navDiv.className = 'video-navigation';
+      navDiv.style.display = 'flex';
+      navDiv.style.gap = '0.5rem';
+      navDiv.style.justifyContent = 'center';
+      navDiv.style.marginBottom = '1rem';
+      
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'nes-btn is-primary';
+      prevBtn.textContent = '‹ Previous';
+      
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'nes-btn is-primary';
+      nextBtn.textContent = 'Next ›';
+      
+      navDiv.appendChild(prevBtn);
+      navDiv.appendChild(nextBtn);
+      selectorDiv.appendChild(navDiv);
+      
+      // Create video embed
+      const embedDiv = document.createElement('div');
+      embedDiv.className = 'youtube-embed';
+      embedDiv.style.marginBottom = '1rem';
+      
+      const iframe = document.createElement('iframe');
+      iframe.id = 'video-player';
+      iframe.width = '100%';
+      iframe.height = '500';
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.style.borderRadius = '4px';
+      
+      embedDiv.appendChild(iframe);
+      
+      // Create playlist link
+      const linkDiv = document.createElement('p');
+      linkDiv.style.textAlign = 'center';
+      linkDiv.style.marginTop = '1rem';
+      
+      const link = document.createElement('a');
+      link.href = 'https://youtube.com/playlist?list=PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.className = 'nes-btn is-primary';
+      link.textContent = 'View Full Playlist on YouTube';
+      
+      linkDiv.appendChild(link);
+      
+      container.appendChild(selectorDiv);
+      container.appendChild(embedDiv);
+      container.appendChild(linkDiv);
+      
+      // Video navigation logic
+      let currentVideoIndex = 0;
+      
+      function displayVideo(index) {
+        if (data.videos[index]) {
+          const video = data.videos[index];
+          iframe.src = `https://www.youtube.com/embed/${video.id}?rel=0`;
+          iframe.title = video.title;
+          currentVideoIndex = index;
+          select.value = index;
+        }
+      }
+      
+      select.addEventListener('change', (e) => {
+        displayVideo(parseInt(e.target.value));
+      });
+      
+      prevBtn.addEventListener('click', () => {
+        if (currentVideoIndex > 0) {
+          displayVideo(currentVideoIndex - 1);
+        }
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        if (currentVideoIndex < data.videos.length - 1) {
+          displayVideo(currentVideoIndex + 1);
+        }
+      });
+      
+      // Load first video
+      displayVideo(0);
+    }
+  })
+  .catch(error => {
+    console.error('Error loading videos:', error);
+    document.getElementById('youtube-episodes-list').innerHTML = '<p>Error loading videos</p>';
+  });
 </script>
