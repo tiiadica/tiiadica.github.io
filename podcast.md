@@ -52,9 +52,6 @@ permalink: /podcast/
 
 <style>
 /* Podcast-specific styles */
-#prevBtn, #nextBtn {
-  display: none;
-}
   .podcast-platforms {
   margin-bottom: 2rem;
   align-items: center;
