@@ -4,7 +4,7 @@ title: "Global Sports Roundup: Top Stories from Around the World"
 date: 2026-03-12
 categories: [World]
 featured: true
-image: /assets/images/featured-default.jpg
+image: /assets/images/dominican.jpg
 ---
 
 ## International Sports Making Waves
