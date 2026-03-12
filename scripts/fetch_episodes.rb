@@ -5,6 +5,13 @@ require 'json'
 require 'fileutils'
 require 'date'
 
+# Get the repo root directory
+REPO_ROOT = Dir.pwd
+DATA_DIR = File.join(REPO_ROOT, '_data')
+
+puts "Repository root: #{REPO_ROOT}"
+puts "Data directory will be: #{DATA_DIR}"
+
 def fetch_audio_episodes
   puts "Fetching audio episodes..."
   
@@ -32,10 +39,14 @@ def fetch_audio_episodes
     episodes = episodes.sort_by { |ep| DateTime.parse(ep['date']) rescue DateTime.now }.reverse.first(10)
     
     # Create _data directory if it doesn't exist
-    FileUtils.mkdir_p('_data')
+    FileUtils.mkdir_p(DATA_DIR)
+    puts "Created directory: #{DATA_DIR}"
     
     # Save to JSON file
-    File.write('_data/podcast_episodes.json', JSON.pretty_generate({ 'episodes' => episodes }))
+    file_path = File.join(DATA_DIR, 'podcast_episodes.json')
+    File.write(file_path, JSON.pretty_generate({ 'episodes' => episodes }))
+    puts "Wrote file: #{file_path}"
+    puts "File exists: #{File.exist?(file_path)}"
     
     puts "✓ Fetched #{episodes.length} audio episodes"
     true
@@ -70,10 +81,14 @@ def fetch_youtube_videos
     end
     
     # Create _data directory if it doesn't exist
-    FileUtils.mkdir_p('_data')
+    FileUtils.mkdir_p(DATA_DIR)
+    puts "Created directory: #{DATA_DIR}"
     
     # Save to JSON file
-    File.write('_data/podcast_videos.json', JSON.pretty_generate({ 'videos' => videos }))
+    file_path = File.join(DATA_DIR, 'podcast_videos.json')
+    File.write(file_path, JSON.pretty_generate({ 'videos' => videos }))
+    puts "Wrote file: #{file_path}"
+    puts "File exists: #{File.exist?(file_path)}"
     
     puts "✓ Fetched #{videos.length} YouTube videos"
     true
@@ -93,6 +108,10 @@ puts ""
 video_success = fetch_youtube_videos
 
 puts "=" * 50
+puts "Checking if files exist:"
+puts "podcast_episodes.json: #{File.exist?(File.join(DATA_DIR, 'podcast_episodes.json'))}"
+puts "podcast_videos.json: #{File.exist?(File.join(DATA_DIR, 'podcast_videos.json'))}"
+
 if audio_success && video_success
   puts "✓ All tasks completed successfully"
   exit 0
