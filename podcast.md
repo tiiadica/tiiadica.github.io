@@ -298,41 +298,7 @@ function loadYouTubeVideoSelector() {
   let videos = [];
   let isUsingFallback = false;
   
-  // Function to fetch playlist data using YouTube API v3 (no API key required for public playlists via JSONP)
-  async function fetchPlaylistData() {
-    try {
-      youtubeContainer.innerHTML = '<p class="loading">Loading YouTube playlist data...</p>';
-      
-      // Use YouTube's oembed API to get basic playlist info
-      const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=50&key=AIzaSyDummy`);
-      
-      if (!response.ok) {
-        throw new Error('YouTube API request failed');
-      }
-      
-      const data = await response.json();
-      
-      if (data.items && data.items.length > 0) {
-        videos = data.items.map(item => ({
-          id: item.snippet.resourceId.videoId,
-          title: item.snippet.title,
-          description: item.snippet.description || 'No description available.'
-        }));
-        
-        console.log(`Successfully loaded ${videos.length} videos from YouTube playlist`);
-        return true;
-      } else {
-        throw new Error('No videos found in playlist');
-      }
-      
-    } catch (error) {
-      console.warn('Unable to fetch YouTube playlist data:', error.message);
-      console.log('Falling back to placeholder content');
-      isUsingFallback = true;
-      videos = fallbackVideos;
-      return false;
-    }
-  }
+
   
   // Alternative method: Use YouTube's RSS feed for public playlists
   async function fetchPlaylistFromRSS() {
@@ -352,7 +318,7 @@ function loadYouTubeVideoSelector() {
         if (entries.length > 0) {
           videos = Array.from(entries).map(entry => {
             const link = entry.getElementsByTagName('link')[0];
-            const videoId = link ? link.getAttribute('href').split('v=')[1] : '';
+            const videoId = link ? link.getAttribute('href').split('/watch?v=')[1] : '';
             const title = entry.getElementsByTagName('title')[0]?.textContent || 'Untitled Episode';
             const summary = entry.getElementsByTagName('summary')[0]?.textContent || 'No description available.';
             
