@@ -19,7 +19,7 @@ permalink: /royals/
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.posts limit:5 %}
+      {% for post in site.categories.Royals limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
