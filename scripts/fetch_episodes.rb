@@ -3,6 +3,7 @@ require 'uri'
 require 'nokogiri'
 require 'json'
 require 'fileutils'
+require 'date'
 
 def fetch_audio_episodes
   puts "Fetching audio episodes..."
@@ -55,7 +56,7 @@ def fetch_youtube_videos
     doc = Nokogiri::XML(response)
     
     videos = []
-    doc.xpath('//entry', 'yt' => 'http://www.youtube.com/xml/schemas/2015/metadata.xsd').each do |entry|
+    doc.xpath('//entry').each do |entry|
       title = entry.xpath('title').text
       link = entry.xpath('link/@href').text
       video_id = link.match(/v=([^&]+)/)&.[](1)
