@@ -52,7 +52,10 @@ permalink: /podcast/
 
 <style>
 /* Podcast-specific styles */
-.podcast-platforms {
+#prevBtn, #nextBtn {
+  display: none;
+}
+  .podcast-platforms {
   margin-bottom: 2rem;
   align-items: center;
   text-align: center;
