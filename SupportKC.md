@@ -60,9 +60,9 @@ fetch('/podcast_videos.json')
       videoDiv.style.justifyContent = 'center';
       
       const iframe = document.createElement('iframe');
-      iframe.style.width = '560px';
+      iframe.style.width = '1280px';
       iframe.style.maxWidth = '100%';
-      iframe.height = '400';
+      iframe.height = '720';
       iframe.src = `https://www.youtube.com/embed/${latestVideo.id}?rel=0`;
       iframe.title = latestVideo.title;
       iframe.frameBorder = '0';
