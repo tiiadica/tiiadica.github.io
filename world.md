@@ -4,7 +4,7 @@ title: World
 permalink: /categories/world/
 ---
 
-{% include featured-by-category.html category="world" %}
+{% include featured-by-category.html category="World" %}
 <ul>
 {% for post in site.categories.world %}
   <li>
