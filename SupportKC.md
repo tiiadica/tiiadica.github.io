@@ -4,7 +4,7 @@ title: Support KC
 permalink: /categories/supportkc/
 ---
 
-{% include featured-by-category.html category="supportkc" %}
+{% include featured-by-category.html category="Support KC" %}
 <ul>
 {% for post in site.categories.supportkc %}
   <li>
