@@ -4,7 +4,7 @@ title: "Supporting Local: A Spotlight on Kansas City's Hidden Gem Businesses"
 date: 2026-03-10
 categories: [Support KC]
 featured: true
-image: /assets/images/featured-default.jpg
+image: /assets/images/pitchside.jpg
 ---
 
 ## Discovering KC's Local Business Community
