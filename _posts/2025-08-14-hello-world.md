@@ -7,7 +7,7 @@ categories:
   - Updates
 featured: false
 description: "Kickoff post introducing the purpose of the site."
-image: /assets/images/hello-world-cover.jpg
+image: /assets/images/maikelbob.jpg
 ---
 
 Welcome to the site! This is the inaugural post.
