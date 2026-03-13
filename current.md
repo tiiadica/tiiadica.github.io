@@ -45,7 +45,7 @@ permalink: /categories/current/
 </section>
 
 <script>
-fetch('/podcast_videos.json')
+fetch('/current_videos.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('latest-video-container');
