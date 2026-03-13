@@ -116,20 +116,78 @@ def fetch_youtube_videos
   end
 end
 
-# Run both functions
+def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
+  puts "Fetching YouTube videos from playlist #{playlist_id}..."
+  
+  begin
+    uri = URI("https://www.youtube.com/feeds/videos.xml?playlist_id=#{playlist_id}")
+    response = Net::HTTP.get(uri)
+    doc = Nokogiri::XML(response)
+    
+    videos = []
+    
+    # Define namespaces
+    namespaces = {
+      'atom' => 'http://www.w3.org/2005/Atom',
+      'yt' => 'http://www.youtube.com/xml/schemas/2015'
+    }
+    
+    # Parse entries
+    doc.xpath('//atom:entry', namespaces).each do |entry|
+      video_id = entry.xpath('yt:videoId', namespaces).first&.text&.strip
+      title = entry.xpath('atom:title', namespaces).first&.text&.strip
+      pub_date = entry.xpath('atom:published', namespaces).first&.text&.strip
+      
+      next if video_id.nil? || video_id.empty? || title.nil? || title.empty?
+      
+      videos << {
+        'id' => video_id,
+        'title' => title,
+        'published' => pub_date
+      }
+    end
+    
+    # Sort by published date (most recent first)
+    videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }.reverse
+    
+    # Remove the published date from the final JSON
+    videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
+    
+    # Create _data directory if it doesn't exist
+    FileUtils.mkdir_p(DATA_DIR)
+    
+    # Save to JSON file
+    file_path = File.join(DATA_DIR, output_filename)
+    File.write(file_path, JSON.pretty_generate({ 'videos' => videos }))
+    puts "✓ Fetched #{videos.length} videos for #{output_filename}"
+    true
+  rescue => e
+    puts "✗ Error fetching videos: #{e.message}"
+    false
+  end
+end
+
+# Run all functions
 puts "Starting podcast episode fetch..."
 puts "=" * 50
 
 audio_success = fetch_audio_episodes
 puts ""
-video_success = fetch_youtube_videos
+
+current_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_neUha6kKjH3Eu5DfV5wOtA', 'current_videos.json')
+royals_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_kFP6hmE3LVHFjTNj9WIu01', 'royals_videos.json')
+world_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_mCjLxjRUTlUBWio6jCurk7', 'world_videos.json')
+podcast_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73', 'podcast_videos.json')
 
 puts "=" * 50
 puts "Checking if files exist:"
 puts "podcast_episodes.json: #{File.exist?(File.join(DATA_DIR, 'podcast_episodes.json'))}"
+puts "current_videos.json: #{File.exist?(File.join(DATA_DIR, 'current_videos.json'))}"
+puts "royals_videos.json: #{File.exist?(File.join(DATA_DIR, 'royals_videos.json'))}"
+puts "world_videos.json: #{File.exist?(File.join(DATA_DIR, 'world_videos.json'))}"
 puts "podcast_videos.json: #{File.exist?(File.join(DATA_DIR, 'podcast_videos.json'))}"
 
-if audio_success && video_success
+if audio_success && current_success && royals_success && world_success && podcast_success
   puts "✓ All tasks completed successfully"
   exit 0
 else
