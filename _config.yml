@@ -19,7 +19,7 @@ category_colors:
   opinion: "#7AB2DD"
   world: "#149954"
   updates: "#000000"
-  supportkc: "CF3339"
+  Support kc: "CF3339"
 defaults:
   - scope:
       path: ""
