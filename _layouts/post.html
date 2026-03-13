@@ -9,7 +9,7 @@ layout: default
       </a>
       <h1 class="nes-text is-primary">{{ page.title }}</h1>
       <div class="post-meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}" style="color: #62CBC9;">{{ page.date | date: "%B %-d, %Y" }}</time>
         {% if page.categories %}
           {% for c in page.categories %}
             {% include category-badge.html category=c %}
