@@ -17,6 +17,9 @@ category_colors:
   current: "#62cbc9"
   podcast: "#C09C5B"
   opinion: "#7AB2DD"
+  world: "#149954"
+  updates: "#000000"
+  supportkc: "CF3339"
 defaults:
   - scope:
       path: ""
