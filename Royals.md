@@ -23,13 +23,13 @@ permalink: /royals/
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
-          {% if post.categories %}
-            <span class="small">
-              {% for cat in post.categories %}
-                <a href="/categories/{{ cat | downcase | urlencode }}/">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
-              {% endfor %}
-            </span>
-          {% endif %}
+         {% if post.categories %}
+  <span class="small">
+    {% for cat in post.categories %}
+      {% include category-badge.html category=cat %}
+    {% endfor %}
+  </span>
+{% endif %}
         </li>
       {% endfor %}
     </ul>
