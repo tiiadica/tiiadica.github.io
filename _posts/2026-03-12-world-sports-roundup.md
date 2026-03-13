@@ -2,8 +2,7 @@
 layout: post
 title: "The Dominican Republic Have 'The Dream Team'"
 date: 2026-03-12
-categories: 
-- world
+categories: [world]
 featured: true
 image: /assets/images/dominican.jpg
 ---
