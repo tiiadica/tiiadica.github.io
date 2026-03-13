@@ -1,6 +1,6 @@
 ---
 layout: page
-title: World
+title: world
 permalink: /categories/world/
 ---
 <div class="nav">
@@ -12,7 +12,7 @@ permalink: /categories/world/
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
-{% include featured-by-category.html category="World" %}
+{% include featured-by-category.html category="world" %}
 <ul>
 {% for post in site.categories.world %}
   <li>
@@ -27,7 +27,7 @@ permalink: /categories/world/
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.categories.World limit:5 %}
+      {% for post in site.categories.world limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
