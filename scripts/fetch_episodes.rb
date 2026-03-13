@@ -148,7 +148,7 @@ def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
     end
     
     # Sort by published date (most recent first)
-    videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }.reverse
+    videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }
     
     # Remove the published date from the final JSON
     videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
