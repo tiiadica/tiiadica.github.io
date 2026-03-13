@@ -18,9 +18,9 @@
       <h3 style="margin-bottom:0.4rem;"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
       <div class="feat-meta" style="font-size:0.75rem;opacity:0.8;">
         <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
-        {% for c in featured.categories %}
-          {% include category-badge.html category=c %}
-        {% endfor %}
+       {% for c in featured.categories %}
+  {% include category-badge.html category=c | downcase %}
+{% endfor %}
         {% if featured.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
       </div>
       <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
