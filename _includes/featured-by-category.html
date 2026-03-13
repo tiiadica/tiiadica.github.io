@@ -3,7 +3,7 @@
   {% if featured_posts and featured_posts.size > 0 %}
     {% assign featured = featured_posts.first %}
   {% else %}
-    {% assign featured = site.posts | where: "categories", include.category | first %}
+    {% assign featured = site.posts | where_exp: "post", "post.categories contains include.category" | first %}
   {% endif %}
 {% endif %}
 
