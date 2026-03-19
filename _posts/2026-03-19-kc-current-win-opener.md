@@ -7,7 +7,7 @@ categories:
 author: Austin Dada
 featured: true
 description: "New-ish Editions of Bethune and Sentnor lead the Current to their first victory of the seaon."
-image: /assets/images/croixcoopbdaycelly.jpg
+image: /assets/images/croixbday.jpg
 ---
 
 USWNT star Ally Sentnor and new aquisition Croix Bethune lead the way to victory as the win doubles as a birthday bash for Betune & Feist.
