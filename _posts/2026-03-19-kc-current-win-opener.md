@@ -27,4 +27,4 @@ The game tying goal was scored by birthday girl Croix Bethune. She managed to ge
 I would say that this was an overall success in Chris Armas’ first game in charge, given the lack of attacking options available. The Current managed to get the win even with Michelle Cooper obviously not being 100% as evidence by her being subbed not long after halftime. I do think it’s really important to keep in mind that this team will only get better as time goes along and players get healthier. We will be watching to see what they can accomplish on the pitch as the season progresses.
 
 
-*Follow KC Current's championship journey and support women's soccer in Kansas City. #KCCurrent #NWSL*
+*#KCCurrent #NWSL*
