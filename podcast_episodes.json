@@ -1,6 +1,11 @@
 {
   "episodes": [
     {
+      "title": "Previewing The Royals Season",
+      "date": "Mon, 23 Mar 2026 15:15:51 GMT",
+      "audioUrl": "https://content.rss.com/episodes/345946/2653848/the-royal-family-kc-royals-podcast/2026_03_23_15_12_32_5240ed9d-2312-484a-9d11-bf46eb5a72b4.mp3"
+    },
+    {
       "title": "The Royals in The Classic",
       "date": "Tue, 10 Mar 2026 03:21:29 GMT",
       "audioUrl": "https://content.rss.com/episodes/345946/2615666/the-royal-family-kc-royals-podcast/2026_03_10_02_57_13_2c85d669-6395-46b0-907c-0024ef247714.mp3"
@@ -44,11 +49,6 @@
       "title": "Roasting Your Royals' Hot Takes",
       "date": "Tue, 29 Jul 2025 01:00:00 GMT",
       "audioUrl": "https://content.rss.com/episodes/345946/2201282/the-royal-family-kc-royals-podcast/2025_09_05_16_08_36_c4d932a1-6498-472f-be18-ccc463939f6f.mp3"
-    },
-    {
-      "title": "5 Easy Steps To Save The Royals Season",
-      "date": "Thu, 17 Jul 2025 22:00:00 GMT",
-      "audioUrl": "https://content.rss.com/episodes/345946/2201283/the-royal-family-kc-royals-podcast/2025_09_05_16_08_52_220f314f-a4e0-461d-8c8b-d55b41e424ed.mp3"
     }
   ]
 }
