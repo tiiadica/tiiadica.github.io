@@ -44,7 +44,4 @@ permalink: /categories/supportkc/
     <p class="small"><a href="/news/">View all posts →</a></p>
   {% endif %}
 </section>
-    console.error('Error loading video:', error);
-    document.getElementById('latest-video-container').innerHTML = '<p>Error loading latest episode</p>';
-  });
 </script>
