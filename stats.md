@@ -15,6 +15,6 @@ permalink: /categories/stats/
 <section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
   <h2 class="nes-text is-primary" style="margin-top:0;">Our 2026 MLB Projections</h2>
   <div class="featured-image-container">
-    <img src="/assets/images/mlbprojections.png" alt="2026 MLB Projections" style="width: 100%; height: auto;">
+    <img src="/assets/images/mlbprojections2026.png" alt="2026 MLB Projections" style="width: 100%; height: auto;">
   </div>
 </section>
