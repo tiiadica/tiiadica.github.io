@@ -303,22 +303,6 @@ a.nes-btn.is-inkc,
   text-align: center;
 }
 
-/* Article body text styling for better readability */
-.post-body,
-.post-body p,
-.post-body h1,
-.post-body h2,
-.post-body h3,
-.post-body h4,
-.post-body h5,
-.post-body h6,
-.post-body li,
-.post-body blockquote,
-.post-body em,
-.post-body strong {
-  color: #ffffff !important;
-}
-
 /* Featured article content text styling */
 .featured-content p,
 .featured-text p {
