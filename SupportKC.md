@@ -51,38 +51,6 @@ permalink: /categories/supportkc/
     <p>Loading video...</p>
   </div>
 </section>
-
-<script>
-fetch('/podcast_videos.json')
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById('latest-video-container');
-    container.innerHTML = '';
-    
-    if (data.videos && data.videos.length > 0) {
-      const latestVideo = data.videos[data.videos.length - 1]; // Last video is most recent
-      
-      const videoDiv = document.createElement('div');
-      videoDiv.style.marginBottom = '1rem';
-      videoDiv.style.display = 'flex';
-      videoDiv.style.justifyContent = 'center';
-      
-      const iframe = document.createElement('iframe');
-      iframe.style.width = '1280px';
-      iframe.style.maxWidth = '100%';
-      iframe.height = '720';
-      iframe.src = `https://www.youtube.com/embed/${latestVideo.id}?rel=0`;
-      iframe.title = latestVideo.title;
-      iframe.frameBorder = '0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-      iframe.allowFullscreen = true;
-      iframe.style.borderRadius = '4px';
-      
-      videoDiv.appendChild(iframe);
-      container.appendChild(videoDiv);
-    }
-  })
-  .catch(error => {
     console.error('Error loading video:', error);
     document.getElementById('latest-video-container').innerHTML = '<p>Error loading latest episode</p>';
   });
