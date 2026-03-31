@@ -44,13 +44,6 @@ permalink: /categories/supportkc/
     <p class="small"><a href="/news/">View all posts →</a></p>
   {% endif %}
 </section>
-
-<section id="new-episode" class="nes-container is-rounded" style="margin-bottom:1rem;">
-  <p class="title" style="color: #FFFFFF;">New Episode</p>
-  <div id="latest-video-container" style="text-align: center;">
-    <p>Loading video...</p>
-  </div>
-</section>
     console.error('Error loading video:', error);
     document.getElementById('latest-video-container').innerHTML = '<p>Error loading latest episode</p>';
   });
