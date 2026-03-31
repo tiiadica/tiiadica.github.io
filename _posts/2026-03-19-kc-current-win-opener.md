@@ -9,9 +9,6 @@ featured: true
 description: "New-ish Editions of Bethune and Sentnor lead the Current to their first victory of the seaon."
 image: /assets/images/croixcoop.jpg
 ---
-
-USWNT star Ally Sentnor and new aquisition Croix Bethune lead the way to victory as the win doubles as a birthday bash for Betune & Feist.
-
 ## RECAP
 
 On March 14th the KC current took on Utah Royals at sunny CPKC Stadium. The sun was shining, the pitch was green and the only thing that could’ve made the day any better was if Temwa Chawinga was in the starting lineup. 
