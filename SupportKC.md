@@ -44,4 +44,3 @@ permalink: /categories/supportkc/
     <p class="small"><a href="/news/">View all posts →</a></p>
   {% endif %}
 </section>
-</script>
