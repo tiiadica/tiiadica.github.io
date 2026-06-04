@@ -1,10 +1,6 @@
 {
   "videos": [
     {
-      "id": "nF_kaYb6osI",
-      "title": "Why Matt Quatraro's Extension Makes No Sense"
-    },
-    {
       "id": "CKkug6ug1ZM",
       "title": "The Royals Are All Over The WBC | The Royal Family Podcast Ep. 9"
     },
@@ -31,6 +27,10 @@
     {
       "id": "jszlWwODe3g",
       "title": "A Tale of Two Seasons | The Royal Family Podcast Ep. 13"
+    },
+    {
+      "id": "uvKpqThRt1Q",
+      "title": "Who is the most clutch player in Kansas City? (Not Who You Think) | The Royal Family Podcast Ep. 14"
     }
   ]
 }
