@@ -7,8 +7,8 @@ categories:
 author: staff
 featured: false
 description: "Jac Caglianone is going to live out his dream participating in the 2026 Home Run Derby representing the Kansas City Royals"
+image: /assets/images/jac-derby.png
 ---
- ![Image description](/assets/images/jac-derby.png)
  
 ## Jac Living His Dream
 
