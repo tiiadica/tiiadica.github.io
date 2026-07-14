@@ -7,8 +7,8 @@ categories:
 author: staff
 featured: false
 description: "Vinnie Pasquantino is back and playing with the Kansas City Royals after having surgery on his hamate bone less than a month ago."
+image: /assets/images/vinnie-is-back.png
 ---
-![Image description](/assets/images/vinnie-is-back.png)
 
 ## Vinnie Is Back!
 
