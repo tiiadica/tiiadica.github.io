@@ -5,7 +5,7 @@ date: 2025-07-15 16:00:00 -0600
 categories:
   - Royals
 author: staff
-featured: false
+featured: true
 description: "8 Different Royals Players were listed in a top 100 list of the best trade candidates before the deadline."
 image: /assets/images/wacha.png
 ---
@@ -15,12 +15,19 @@ image: /assets/images/wacha.png
 The Royals have 8 players on ESPN's 'Top 100 Trading Candidates' that was updated today. They are listed below...
 
 #20 Michael Wacha
+
 #41 Daniel Lynch IV
+
 #51 Seth Lugo
+
 #53 Kris Bubic
+
 #75 John Schreiber
+
 #80 Matt Strahm
+
 #85 Lane Thomas
+
 #94 Alex Lange
 
 ## Speculation
