@@ -7,7 +7,7 @@ categories:
 author: staff
 featured: true
 description: "Lionel Messi will return to KCMO to face Switzerland in Kansas City’s last hosted World Cup match"
-image: /assets/images/messi-kansas-city.jpg
+image: /assets/images/messii.png
 ---
  
 ## The Golden Boy Returns
