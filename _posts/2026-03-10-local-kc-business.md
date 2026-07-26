@@ -1,26 +1,20 @@
 ---
 layout: post
-title: "Supporting Local: A Spotlight on Kansas City's Hidden Gem Businesses"
-date: 2026-03-10
+title: "Pitchside Coffee Is Elevating KC Coffee Standards"
+date: 2026-07-26
 categories: [Support KC]
 featured: true
+description: “The best coffee shop in Kansas City is owned by KC Current Players”
 image: /assets/images/pitchside.jpg
 ---
 
-## Discovering KC's Local Business Community
+## The best coffee shop in Kansas City is owned by KC Current Players
 
-Kansas City is home to a vibrant small business community that deserves recognition and support. Local entrepreneurs are creating unique products and experiences that make our city special.
+You may be familiar with on of Kansas City’s newer coffeeshops Pitchside Coffee. What you might not know is this shop was founded and is owned by 6 active and former KC Current players. Maybe the most notable, because of her heavy involvement with the team still, is center back Elizabeth Ball.
 
-### The Heart of Small Business
+Why does any of this matter? Because to my estimation, this is not just a coffee shop that was sprung to popularity because a few noteworthy people opened it. Pitchside may actually have the best quality of traditional espresso drinks in the city.
 
-Small businesses are the backbone of Kansas City's economy. From neighborhood shops to family-owned restaurants, these enterprises create jobs, foster community connections, and preserve the character that makes KC unique.
+You should check it out. It’s worth it.
 
-### Supporting Local Impact
 
-When you choose to shop local, you're directly supporting Kansas City families and investing in the community's future. Local business owners reinvest their earnings back into the neighborhood, sponsor local events, and contribute to civic life.
-
-### Community-Driven Innovation
-
-Kansas City's small business owners are innovators and problem-solvers. They listen to customer feedback, adapt quickly to changes, and create solutions tailored to their communities' needs.
-
-By supporting local businesses, we help ensure that Kansas City remains a vibrant, economically diverse community for generations to come.
+*This article was created with a batch of short articles we wrote to help fill out the website for it's official launch*
