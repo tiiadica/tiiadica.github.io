@@ -5,25 +5,25 @@ h2.nes-text.is-primary {
   font-weight: bold;
 }
 
-/* Make all nav buttons the same width */
+
 .nav .nes-btn {
   width: 140px;
   text-align: center;
   white-space: nowrap;
 }
 
-/* Existing styles preserved below */
+
 html, body {
   background: #26364b !important;
   background-color: #26364b !important;
 }
 
-/* Custom cursor - Force on all elements */
+
 * {
   cursor: url('assets/cursor.png') 16 16, auto !important;
 }
 
-/* Specifically target NES buttons and interactive elements */
+
 .nes-btn,
 .nes-btn:hover,
 .nes-btn:active,
@@ -42,46 +42,46 @@ select {
 .nes-btn.is-error,
 .nes-btn.is-disabled,
 .nes-btn.is-dark,
-.nes-btn.is-world,
-.nes-btn.is-inkc,
+.nes-btn.is-chiefs,
+.nes-btn.is-local,
 button.nes-btn.is-primary,
 button.nes-btn.is-success,
 button.nes-btn.is-warning,
 button.nes-btn.is-error,
 button.nes-btn.is-disabled,
 button.nes-btn.is-dark,
-button.nes-btn.is-world,
-button.nes-btn.is-inkc,
+button.nes-btn.is-chiefs,
+button.nes-btn.is-local,
 a.nes-btn.is-primary,
 a.nes-btn.is-success,
 a.nes-btn.is-warning,
 a.nes-btn.is-error,
 a.nes-btn.is-disabled,
 a.nes-btn.is-dark,
-a.nes-btn.is-world,
-a.nes-btn.is-inkc,
+a.nes-btn.is-chiefs,
+a.nes-btn.is-local,
 .nes-btn.is-primary:active,
 .nes-btn.is-success:active,
 .nes-btn.is-warning:active,
 .nes-btn.is-error:active,
 .nes-btn.is-disabled:active,
 .nes-btn.is-dark:active,
-.nes-btn.is-world:active,
-.nes-btn.is-inkc:active,
+.nes-btn.is-chiefs:active,
+.nes-btn.is-local:active,
 .nes-btn.is-primary:focus,
 .nes-btn.is-success:focus,
 .nes-btn.is-warning:focus,
 .nes-btn.is-error:focus,
 .nes-btn.is-disabled:focus,
 .nes-btn.is-dark:focus,
-.nes-btn.is-world:focus,
-.nes-btn.is-inkc:focus {
+.nes-btn.is-chiefs:focus,
+.nes-btn.is-chiefs:focus {
   box-shadow:
     0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
 }
 
-/* Individual button shadow overrides */
+
 .nes-btn.is-primary,
 .nes-btn.is-primary:active,
 .nes-btn.is-primary:focus {
@@ -122,77 +122,77 @@ a.nes-btn.is-inkc,
     0 0.5em 0 #212529 !important;
 }
 
-.nes-btn.is-world,
-.nes-btn.is-world:active,
-.nes-btn.is-world:focus {
+.nes-btn.is-chiefs,
+.nes-btn.is-chiefs:active,
+.nes-btn.is-chiefs:focus {
   box-shadow:
-    0 0.25em 0 #E4312b !important,
+    0 0.25em 0 #FFB81C !important,
     0 0.5em 0 #212529 !important;
 }
 
-.nes-btn.is-inkc,
-.nes-btn.is-inkc:active,
-.nes-btn.is-inkc:focus {
+.nes-btn.is-local,
+.nes-btn.is-local:active,
+.nes-btn.is-local:focus {
   box-shadow:
     0 0.25em 0 #004687 !important,
     0 0.5em 0 #212529 !important;
 }
 
-/* PODCAST button */
+
 .nes-btn.is-primary {
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
   color: #fff !important; /* White text per request */
 }
 
-/* ROYALS button */
+
 .nes-btn.is-success {
   background-color: #004687 !important;
   border-color: #004687 !important;
   color: #fff !important;
 }
 
-/* CURRENT button */
+
 .nes-btn.is-warning {
   background-color: #CF3339 !important;
   border-color: #CF3339 !important;
   color: #fff !important;
 }
 
-/* SUPPORT KC button */
+
 .nes-btn.is-error {
   background-color: #004687 !important;
   border-color: #004687 !important;
   color: #fff !important;
 }
 
-/* WORLD button */
+
 .nes-btn.is-disabled {
   background-color: #62cbc9 !important;
   border-color: #62cbc9 !important;
   color: #fff !important;
 }
 
-/* STATS button */
+
 .nes-btn.is-dark {
   background-color: #212529 !important;
   border-color: #212529 !important;
   color: #fff !important;
 }
 
-/* WORLD button - Custom colors */
-.nes-btn.is-world {
-  background-color: #149954 !important;
-  border-color: #149954 !important;
+
+.nes-btn.is-chiefs {
+  background-color: #E31837 !important;
+  border-color: #E31837 !important;
   color: #fff !important;
 }
 
-/* IN KC button - White background variant */
-.nes-btn.is-inkc {
+
+.nes-btn.is-local {
   background-color: #ffffff !important;
   border-color: #ffffff !important;
-  color: #000 !important; /* Black text for visibility */
-}/* Other variants as previously defined */
+  color: #000 !important;
+}
 
 .hero {
   text-align: center;
@@ -206,7 +206,7 @@ a.nes-btn.is-inkc,
   border: none;
 }
 
-/* Responsive sizing for hero image */
+
 @media (max-width: 768px) {
   .hero-image {
     max-width: 90%;
@@ -219,7 +219,7 @@ a.nes-btn.is-inkc,
   }
 }
 
-/* Podcast page specific styles */
+
 .page h1.nes-text.is-primary {
   text-align: center;
 }
@@ -230,15 +230,15 @@ a.nes-btn.is-inkc,
   margin-bottom: 2rem;
 }
 
-/* Override NES.css ::after pseudo-element shadows with per-button accent colors */
+
 .nes-btn.is-success::after { box-shadow: inset -4px -4px #7AB2DD !important; }
 .nes-btn.is-primary::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-warning::after { box-shadow: inset -4px -4px #62cbc9 !important; }
 .nes-btn.is-error::after { box-shadow: inset -4px -4px #004687 !important; }
 .nes-btn.is-disabled::after { box-shadow: inset -4px -4px #CF3339 !important; }
 .nes-btn.is-dark::after { box-shadow: inset -4px -4px #FFFFFF !important; }
-.nes-btn.is-world::after { box-shadow: inset -4px -4px #E4312b !important; }
-.nes-btn.is-inkc::after { box-shadow: inset -4px -4px #004687 !important; }
+.nes-btn.is-chiefs::after { box-shadow: inset -4px -4px #FFB81C !important; }
+.nes-btn.is-local::after { box-shadow: inset -4px -4px #004687 !important; }
 
 .nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
 .nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
@@ -246,8 +246,8 @@ a.nes-btn.is-inkc,
 .nes-btn.is-error:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 .nes-btn.is-disabled:hover::after { box-shadow: inset -6px -6px #CF3339 !important; }
 .nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #FFFFFF !important; }
-.nes-btn.is-world:hover::after { box-shadow: inset -6px -6px #E4312b !important; }
-.nes-btn.is-inkc:hover::after { box-shadow: inset -6px -6px #004687 !important; }
+.nes-btn.is-chiefs:hover::after { box-shadow: inset -6px -6px #FFB81C !important; }
+.nes-btn.is-local:hover::after { box-shadow: inset -6px -6px #004687 !important; }
 
 .nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
 .nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
@@ -255,10 +255,10 @@ a.nes-btn.is-inkc,
 .nes-btn.is-error:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 .nes-btn.is-disabled:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #CF3339 !important; }
 .nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFFFFF !important; }
-.nes-btn.is-world:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #E4312b !important; }
-.nes-btn.is-inkc:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
+.nes-btn.is-chiefs:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFB81C !important; }
+.nes-btn.is-local:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
 
-/* Featured article styles */
+
 .featured-content {
   display: block;
 }
@@ -291,25 +291,25 @@ a.nes-btn.is-inkc,
   max-width: 100%;
 }
 
-/* Responsive design for featured section */
+
 @media (max-width: 768px) {
   .featured-image {
     height: 500px;
   }
 }
 
-/* Center align page headers */
+
 .page h1.nes-text.is-primary {
   text-align: center;
 }
 
-/* Featured article content text styling */
+
 .featured-content p,
 .featured-text p {
   color: #ffffff !important;
 }
 
-/* Article links styling */
+
 .post-body a {
   color: #7AB2DD !important;
 }
@@ -319,7 +319,7 @@ a.nes-btn.is-inkc,
   opacity: 0.8;
 }
 
-/* Homepage article links and featured article titles */
+
 .post-list a,
 .featured-text h3 a {
   color: #7AB2DD !important;
@@ -331,7 +331,7 @@ a.nes-btn.is-inkc,
   opacity: 0.8;
 }
 
-/* Recent Posts section styling */
+
 #recent-posts .title {
   color: #ffffff !important;
 }
@@ -340,7 +340,7 @@ a.nes-btn.is-inkc,
   color: #7AB2DD !important;
 }
 
-/* Date text styling - Set all date colors to #004687 */
+
 .post-date,
 time,
 .feat-meta time,
@@ -350,7 +350,7 @@ span.post-date,
   color: #62CBC9 !important;
 }
 
-/* Specific targeting for date spans in home page and news archive */
+
 .post-list .small:not(:has(a)),
 .small:not(a):not(:has(a)):not(.category-badge) {
   color: #62CBC9 !important;
