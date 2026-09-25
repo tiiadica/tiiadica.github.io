@@ -7,7 +7,7 @@ permalink: /categories/local/
   <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
   <a class="nes-btn is-success" href="/royals/">ROYALS</a>
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
-  <a class="nes-btn is-world" href="/categories/world/">WORLD</a>
+  <a class="nes-btn is-chiefs" href="/categories/chiefs/">chiefs</a>
   <a class="nes-btn is-local" href="/categories/local/">LOCAL</a>
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
