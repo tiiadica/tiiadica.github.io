@@ -3,7 +3,7 @@ layout: post
 title: "Travis Kelce Is Married!"
 date: 2026-07-12 12:00:00 -0600
 categories:
-  - world
+  - chiefs
 author: staff  
 featured: false
 description: "Travis Kelce and Taylor Swift seal the deal"
