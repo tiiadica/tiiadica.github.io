@@ -1,20 +1,20 @@
 ---
 layout: page
-title: Support KC
-permalink: /categories/supportkc/
+title: Local
+permalink: /categories/local/
 ---
 <div class="nav">
   <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
   <a class="nes-btn is-success" href="/royals/">ROYALS</a>
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
   <a class="nes-btn is-world" href="/categories/world/">WORLD</a>
-  <a class="nes-btn is-inkc" href="/categories/supportkc/">IN KC</a>
+  <a class="nes-btn is-local" href="/categories/local/">LOCAL</a>
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
-{% include featured-by-category.html category="Support KC" %}
+{% include featured-by-category.html category="Local" %}
 <ul>
-{% for post in site.categories.supportkc %}
+{% for post in site.categories.local %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -27,7 +27,7 @@ permalink: /categories/supportkc/
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.categories.supportkc limit:5 %}
+      {% for post in site.categories.local limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
