@@ -5,7 +5,7 @@ require 'json'
 require 'fileutils'
 require 'date'
 
-# Get the repo root directory
+
 REPO_ROOT = Dir.pwd
 DATA_DIR = File.join(REPO_ROOT, '_data')
 
@@ -35,14 +35,14 @@ def fetch_audio_episodes
       }
     end
     
-    # Sort by date and take latest 10
+   
     episodes = episodes.sort_by { |ep| DateTime.parse(ep['date']) rescue DateTime.now }.reverse.first(10)
     
-    # Create _data directory if it doesn't exist
+    
     FileUtils.mkdir_p(DATA_DIR)
     puts "Created directory: #{DATA_DIR}"
     
-    # Save to JSON file
+    
     file_path = File.join(DATA_DIR, 'podcast_episodes.json')
     File.write(file_path, JSON.pretty_generate({ 'episodes' => episodes }))
     puts "Wrote file: #{file_path}"
@@ -68,13 +68,13 @@ def fetch_youtube_videos
     
     videos = []
     
-    # Define namespaces
+   
     namespaces = {
       'atom' => 'http://www.w3.org/2005/Atom',
       'yt' => 'http://www.youtube.com/xml/schemas/2015'
     }
     
-    # Parse entries
+   
     doc.xpath('//atom:entry', namespaces).each do |entry|
       video_id = entry.xpath('yt:videoId', namespaces).first&.text&.strip
       title = entry.xpath('atom:title', namespaces).first&.text&.strip
@@ -89,19 +89,19 @@ def fetch_youtube_videos
       }
     end
     
-    # Sort by published date (most recent first)
+    
     videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }
     
-    # Remove the published date from the final JSON (optional, just keep id and title)
+    
     videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
     
     puts "Found #{videos.length} videos in feed"
     
-    # Create _data directory if it doesn't exist
+   
     FileUtils.mkdir_p(DATA_DIR)
     puts "Created directory: #{DATA_DIR}"
     
-    # Save to JSON file
+   
     file_path = File.join(DATA_DIR, 'podcast_videos.json')
     File.write(file_path, JSON.pretty_generate({ 'videos' => videos }))
     puts "Wrote file: #{file_path}"
@@ -126,13 +126,13 @@ def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
     
     videos = []
     
-    # Define namespaces
+
     namespaces = {
       'atom' => 'http://www.w3.org/2005/Atom',
       'yt' => 'http://www.youtube.com/xml/schemas/2015'
     }
     
-    # Parse entries
+
     doc.xpath('//atom:entry', namespaces).each do |entry|
       video_id = entry.xpath('yt:videoId', namespaces).first&.text&.strip
       title = entry.xpath('atom:title', namespaces).first&.text&.strip
@@ -147,16 +147,16 @@ def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
       }
     end
     
-    # Sort by published date (most recent first)
+
     videos = videos.sort_by { |v| DateTime.parse(v['published']) rescue DateTime.now }
     
-    # Remove the published date from the final JSON
+
     videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
     
-    # Create _data directory if it doesn't exist
+
     FileUtils.mkdir_p(DATA_DIR)
     
-    # Save to JSON file
+
     file_path = File.join(DATA_DIR, output_filename)
     File.write(file_path, JSON.pretty_generate({ 'videos' => videos }))
     puts "✓ Fetched #{videos.length} videos for #{output_filename}"
@@ -167,7 +167,7 @@ def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
   end
 end
 
-# Run all functions
+
 puts "Starting podcast episode fetch..."
 puts "=" * 50
 
@@ -187,7 +187,7 @@ puts "royals_videos.json: #{File.exist?(File.join(DATA_DIR, 'royals_videos.json'
 puts "chiefs_videos.json: #{File.exist?(File.join(DATA_DIR, 'chiefs_videos.json'))}"
 puts "podcast_videos.json: #{File.exist?(File.join(DATA_DIR, 'podcast_videos.json'))}"
 
-if audio_success && current_success && royals_success && world_success && podcast_success
+if audio_success && current_success && royals_success && chiefs_success && podcast_success
   puts "✓ All tasks completed successfully"
   exit 0
 else
