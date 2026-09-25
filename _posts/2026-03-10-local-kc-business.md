@@ -2,7 +2,7 @@
 layout: post
 title: "Pitchside Coffee Is Elevating KC Coffee Standards"
 date: 2026-07-26
-categories: [Support KC]
+categories: [Local]
 featured: true
 description: “The best coffee shop in Kansas City is owned by KC Current Players”
 image: /assets/images/pitchside.jpg
