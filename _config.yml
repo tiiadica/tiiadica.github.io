@@ -17,9 +17,9 @@ category_colors:
   current: "#62cbc9"
   podcast: "#C09C5B"
   opinion: "#7AB2DD"
-  world: "#149954"
+  chiefs: "#E31837"
   updates: "#000000"
-  support kc: "#CF3339"
+  local: "#CF3339"
 defaults:
   - scope:
       path: ""
