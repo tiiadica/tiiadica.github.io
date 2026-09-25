@@ -3,7 +3,7 @@ layout: post
 title: "Messi Returns To Kansas City"
 date: 2026-07-08 10:00:00 -0600
 categories:
-  - world
+  - chiefs
 author: staff
 featured: true
 description: "Lionel Messi will return to KCMO to face Switzerland in Kansas City’s last hosted World Cup match"
