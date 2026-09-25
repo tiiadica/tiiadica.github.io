@@ -1,20 +1,20 @@
 ---
 layout: page
-title: world
-permalink: /categories/world/
+title: chiefs
+permalink: /categories/chiefs/
 ---
 <div class="nav">
   <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
   <a class="nes-btn is-success" href="/royals/">ROYALS</a>
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
-  <a class="nes-btn is-world" href="/categories/world/">WORLD</a>
-  <a class="nes-btn is-inkc" href="/categories/supportkc/">IN KC</a>
+  <a class="nes-btn is-chiefs" href="/categories/chiefs/">CHIEFS</a>
+  <a class="nes-btn is-local" href="/categories/local/">LOCAL</a>
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
-{% include featured-by-category.html category="world" %}
+{% include featured-by-category.html category="local" %}
 <ul>
-{% for post in site.categories.world %}
+{% for post in site.categories.wlocal %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -27,7 +27,7 @@ permalink: /categories/world/
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.categories.world limit:5 %}
+      {% for post in site.categories.local limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -53,14 +53,14 @@ permalink: /categories/world/
 </section>
 
 <script>
-fetch('/world_videos.json')
+fetch('/chiefs_videos.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('latest-video-container');
     container.innerHTML = '';
     
     if (data.videos && data.videos.length > 0) {
-      const latestVideo = data.videos[data.videos.length - 1]; // Last video is most recent
+      const latestVideo = data.videos[data.videos.length - 1]; 
       
       const videoDiv = document.createElement('div');
       videoDiv.style.marginBottom = '1rem';
