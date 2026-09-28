@@ -15,8 +15,9 @@ layout: default
             {% include category-badge.html category=c %}
           {% endfor %}
         {% endif %}
+       {% if page.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
         {% if page.author %}<span class="author">By {{ page.author | capitalize }}</span>{% endif %}
-        {% if page.featured %}<span class="category-badge" style="--cat-color:#C09C5B">Featured</span>{% endif %}
+        
       </div>
       {% if page.image %}
         <figure class="feature-image">
