@@ -2,8 +2,13 @@
 layout: default
 ---
 <main class="wrap post-page">
+  <article class="post">
+    <header>
+      <a href="/">
+        <img src="{{ '/assets/images/Untitled (86).png' | relative_url }}" alt="The Royal Family" class="header-image">
+      </a>
 
-   <div class="nav">
+    <div class="nav">
     <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
     <a class="nes-btn is-success" href="/royals/">ROYALS</a>
     <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
@@ -11,12 +16,7 @@ layout: default
     <a class="nes-btn is-local" href="/categories/local/">LOCAL</a>
     <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
   </div>
-  
-  <article class="post">
-    <header>
-      <a href="/">
-        <img src="{{ '/assets/images/Untitled (86).png' | relative_url }}" alt="The Royal Family" class="header-image">
-      </a>
+       
       <h1 class="nes-text is-primary">{{ page.title }}</h1>
       <div class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" style="color: #62CBC9;">{{ page.date | date: "%B %-d, %Y" }}</time>
