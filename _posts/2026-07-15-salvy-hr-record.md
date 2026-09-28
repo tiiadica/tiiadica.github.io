@@ -4,7 +4,6 @@ title: "This Royal Is About To Make History"
 date: 2026-07-15 10:00:00 -0600
 categories:
   - Royals
-author: staff
 featured: false
 description: "Salvador Perez is only 3 Home Runs away from cementing himself further into Royals history"
 image: /assets/images/salvyhr.png
