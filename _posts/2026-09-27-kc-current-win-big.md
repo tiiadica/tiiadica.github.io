@@ -5,7 +5,7 @@ date: 2026-09-27 16:00:00 -0600
 categories:
   - current
 featured: true
-author: Austin Dada
+author: Tyler Horn
 description: "A hat trick from Hopkins, an all-time effort from Chawinga, and a jolt of energy in a season that was close to dead -- lead the Current to a win over the Summit"
 image: /assets/images/haileyhattrickhopkins.png
 ---
