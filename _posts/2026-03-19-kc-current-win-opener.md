@@ -5,7 +5,7 @@ date: 2026-03-19 16:05:00 -0600
 categories:
   - current
 author: Austin Dada
-featured: true
+featured: false
 description: "New-ish Editions of Bethune and Sentnor lead the Current to their first victory of the seaon."
 image: /assets/images/croixcoop.jpg
 ---
