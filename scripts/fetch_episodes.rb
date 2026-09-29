@@ -176,7 +176,7 @@ puts ""
 
 current_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_neUha6kKjH3Eu5DfV5wOtA', 'current_videos.json')
 royals_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_kFP6hmE3LVHFjTNj9WIu01', 'royals_videos.json')
-chiefs_success = fetch_youtube_videos_for_playlist('PLZAP3OF9f6nY&si=g2ewUazCLVoF3BhH', 'chiefs_video.json')
+chiefs_success = fetch_youtube_videos_for_playlist('PLZAP3OF9f6nY&si=g2ewUazCLVoF3BhH', 'chiefs_videos.json')
 podcast_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73', 'podcast_videos.json')
 
 puts "=" * 50
