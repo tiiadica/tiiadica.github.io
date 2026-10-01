@@ -80,3 +80,6 @@ fetch('/chiefs_videos.json')
     document.getElementById('latest-video-container').innerHTML = '<p>Error loading latest episode</p>';
   });
 </script>
+
+<iframe src="https://theroyalfamilypodkc.substack.com/embed" width="1833" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" ></iframe>
+
