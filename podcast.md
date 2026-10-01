@@ -28,8 +28,8 @@ permalink: /podcast/
       <i class="platform-icon amazon-music"><img width="100" height="100" alt="Untitled (83)" src="https://github.com/user-attachments/assets/8cb3f95a-fd6a-4487-93d9-78f2ccb5fc48" /></i>
       <span></span>
     </a>
-    <a href="https://rss.com/podcasts/the-royal-family-kc-royals-podcast" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon rss"><img width="100" height="100" alt="Untitled (79)" src="https://github.com/user-attachments/assets/0582f648-462a-46b2-beb0-7b615ff05b72" /></i>
+    <a href="[https://rss.com/podcasts/the-royal-family-kc-royals-podcast](https://theroyalfamilypodkc.substack.com/listen/the-royal-family-podcast)" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
+      <i class="platform-icon substack"><img width="100" height="100" alt="Untitled (79)" src="assets/images/substack.webp" /></i>
       <span></span>
     </a>
   </div>
