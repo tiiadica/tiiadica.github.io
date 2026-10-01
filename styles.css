@@ -449,4 +449,13 @@ span.post-date,
     max-width: 100% !important;
     height: 400px !important;
   }
+
+  .nav .nes-btn {
+  width: 140px;
+  height: auto;
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.65rem;
+  white-space: nowrap;
+  line-height: 1;
+}
 }
