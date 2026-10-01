@@ -8,7 +8,7 @@ kramdown:
     mdash: '---'
 permalink: /:categories/:year/:month/:day/:slug/
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: "/news/page:num/"
 future: true
 plugins:
   - jekyll-feed
