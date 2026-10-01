@@ -365,8 +365,8 @@ span.post-date,
   }
   
   .nav .nes-btn {
-    width: 140px;
-    flex-basis: 140px;
+    width: 300px;
+    flex-basis: 300px;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
   }
