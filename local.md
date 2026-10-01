@@ -44,3 +44,6 @@ permalink: /categories/local/
     <p class="small"><a href="/news/">View all posts →</a></p>
   {% endif %}
 </section>
+
+<iframe src="https://theroyalfamilypodkc.substack.com/embed" width="1833" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" ></iframe>
+
