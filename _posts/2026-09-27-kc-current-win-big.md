@@ -47,4 +47,5 @@ It does raise your eyebrows a bit though… why was Temwa playing the entirety o
 
 Regardless, it was an incredible win for the Current, right when they needed an incredible win. They’ll have 13th ranked Bay FC in CPKC next week and, barring a victory derived from emotion in Claire Hutton’s revenge game, this should be a less than moderately difficult match for the Current to win. That win could see the Current go from as low as ninth in the table to as high as fourth in the span of eight days. That is the type of momentum that you ride into a top four finish and at least a couple home-pitch matches in the playoffs.
 
-The Current are peaking, or should I say Summiting… no that’s stupid. The Current are peaking at just the right time and we’re here for it.
+The Current are peaking, or should I say Summiting… no, that’s stupid. The Current are peaking at just the right time and we’re here for it.
+
