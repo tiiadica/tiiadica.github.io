@@ -18,11 +18,11 @@ plugins:
 category_colors:
   royals: "#004687"
   current: "#62cbc9"
-  podcast: "#C09C5B"
-  opinion: "#7AB2DD"
+  podcast: "#7AB2DD"
+  opinion: "#C09C5B"
   chiefs: "#E31837"
   updates: "#000000"
-  local: "#CF3339"
+  local: "#fff"
 defaults:
   - scope:
       path: ""
