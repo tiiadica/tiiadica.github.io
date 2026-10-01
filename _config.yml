@@ -2,7 +2,10 @@ title: "THE ROYAL FAMILY"
 description: "Kansas City Royals & KC Current coverage, analysis, and opinion."
 url: "https://theroyalfamilykc.com"
 baseurl: ""
-markdown: kramdown
+kramdown:
+  typographic_symbols:
+    ndash: '--'
+    mdash: '---'
 permalink: /:categories/:year/:month/:day/:slug/
 paginate: 10
 paginate_path: "/news/page:num/"
