@@ -29,7 +29,7 @@ permalink: /podcast/
       <span></span>
     </a>
     <a href="https://theroyalfamilypodkc.substack.com/listen/the-royal-family-podcast" class="platform-link" title="" target="_blank" rel="noopener noreferrer">
-      <i class="platform-icon substack"><img width="100" height="100" alt="substack" src="assets/images/substack.png" /></i>
+      <i class="platform-icon substack"><img width="100" height="100" alt="substack" src="/assets/images/substack.png" /></i>
       <span></span>
     </a>
   </div>
