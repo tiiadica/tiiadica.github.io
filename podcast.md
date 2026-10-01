@@ -313,3 +313,5 @@ if (data.videos && data.videos.length > 0) {
     document.getElementById('youtube-episodes-list').innerHTML = '<p>Error loading videos</p>';
   });
 </script>
+
+<iframe src="https://theroyalfamilypodkc.substack.com/embed" width="1833" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" ></iframe>
