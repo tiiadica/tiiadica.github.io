@@ -355,21 +355,3 @@ span.post-date,
 .small:not(a):not(:has(a)):not(.category-badge) {
   color: #62CBC9 !important;
 }
-
-.site-footer {
-  background-color: #222;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.social-icons-container a {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icons-container a:hover {
-  color: #00aced; /* Change hover color as desired */
-}
