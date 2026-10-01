@@ -18,3 +18,5 @@ permalink: /categories/stats/
     <img src="/assets/images/" alt="Currently in the process of creating a new quadratic formula" style="width: 100%; height: auto;">
   </div>
 </section>
+
+<iframe src="https://theroyalfamilypodkc.substack.com/embed" width="1833" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" ></iframe>
