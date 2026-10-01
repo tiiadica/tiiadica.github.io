@@ -21,8 +21,8 @@ category_colors:
   podcast: "#7AB2DD"
   opinion: "#C09C5B"
   chiefs: "#E31837"
-  updates: "#000000"
-  local: "#fff"
+  updates: "#C50F74"
+  local: "#130551"
 defaults:
   - scope:
       path: ""
