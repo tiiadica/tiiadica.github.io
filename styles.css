@@ -406,19 +406,31 @@ span.post-date,
     font-size: 14px;
   }
   
- .nav {
+.nav {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 1rem;
   }
-  
+
   .nav .nes-btn {
-    width: 140px;
-    height: auto;
-    padding: 0.5rem 1rem;
-    font-size: 0.65rem;
+    width: 140px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0.45rem 0.75rem !important;
+    font-size: 0.7rem !important;
+    line-height: 1.1 !important;
+    box-shadow: none !important;
     white-space: nowrap;
-    line-height: 1.2;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .nav .nes-btn::before,
+  .nav .nes-btn::after {
+    display: none !important;
+    box-shadow: none !important;
   }
   
   .featured-image {
