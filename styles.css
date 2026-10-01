@@ -365,6 +365,7 @@ span.post-date,
   
   .nav .nes-btn {
     width: auto;
+    max-width: 45%;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
   }
@@ -381,9 +382,21 @@ span.post-date,
     padding: 1rem;
   }
   
-  iframe {
+  #latest-video-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #latest-video-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  
+  iframe[src*="substack"] {
+    width: 100% !important;
     max-width: 100% !important;
-    height: auto !important;
+    height: 500px !important;
   }
 }
 
@@ -397,7 +410,8 @@ span.post-date,
   }
   
   .nav .nes-btn {
-    width: 100%;
+    width: auto;
+    max-width: 48%;
     font-size: 0.65rem;
     padding: 0.4rem 0.5rem;
   }
@@ -412,5 +426,22 @@ span.post-date,
   
   h1, h2, h3 {
     font-size: 1.2rem;
+  }
+  
+  #latest-video-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #latest-video-container iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  
+  iframe[src*="substack"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 400px !important;
   }
 }
