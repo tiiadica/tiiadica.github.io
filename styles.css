@@ -361,12 +361,10 @@ span.post-date,
   .nav {
     flex-wrap: wrap;
     gap: 0.5rem;
-    justify-content: center;
   }
   
   .nav .nes-btn {
-    width: 140px;
-    flex-basis: 140px;
+    width: auto;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
   }
@@ -406,31 +404,14 @@ span.post-date,
     font-size: 14px;
   }
   
-.nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+  .nav {
+    gap: 0.25rem;
   }
-
+  
   .nav .nes-btn {
-    width: 140px !important;
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 0.45rem 0.75rem !important;
-    font-size: 0.7rem !important;
-    line-height: 1.1 !important;
-    box-shadow: none !important;
-    white-space: nowrap;
-    text-align: center;
-    display: inline-block;
-  }
-
-  .nav .nes-btn::before,
-  .nav .nes-btn::after {
-    display: none !important;
-    box-shadow: none !important;
+    width: 100%;
+    font-size: 0.65rem;
+    padding: 0.4rem 0.5rem;
   }
   
   .featured-image {
@@ -444,8 +425,8 @@ span.post-date,
   h1, h2, h3 {
     font-size: 1.2rem;
   }
-  
-  #latest-video-container {
+
+   #latest-video-container {
     width: 100%;
     overflow: hidden;
   }
