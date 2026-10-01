@@ -19,4 +19,6 @@ permalink: /categories/stats/
   </div>
 </section>
 
-<iframe src="https://theroyalfamilypodkc.substack.com/embed" width="1833" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no" ></iframe>
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe src="https://theroyalfamilypodkc.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
+</div>
