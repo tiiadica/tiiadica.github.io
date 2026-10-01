@@ -3,8 +3,8 @@ h1.nes-text.is-primary,
 h2.nes-text.is-primary {
   color: #7AB2DD !important;
   font-weight: bold;
-   -webkit-text-stroke: .25px black;
-  text-stroke: .25px black;
+   -webkit-text-stroke: .10px black;
+  text-stroke: .10px black;
 }
 
 
