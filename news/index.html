@@ -17,7 +17,6 @@ permalink: /news/
           <span class="small">
             {% for cat in post.categories %}
               {% include category-badge.html category=cat %}
-              <a href="/categories/{{ cat | downcase | urlencode }}/">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </span>
         {% endif %}
