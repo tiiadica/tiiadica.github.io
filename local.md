@@ -9,7 +9,7 @@ permalink: /local/
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
   <a class="nes-btn is-chiefs" href="/categories/chiefs/">CHIEFS</a>
   <a class="nes-btn is-local" href="/local/">LOCAL</a>
-  <a class="nes-btn is-dark" href="/articles/">ARTICLES</a>
+  <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
 {% include featured-by-category.html category="local" %}
