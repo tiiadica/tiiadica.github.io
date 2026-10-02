@@ -331,6 +331,16 @@ a.nes-btn.is-local,
   opacity: 0.8;
 }
 
+.post-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
 
 #recent-posts .title {
   color: #ffffff !important;
