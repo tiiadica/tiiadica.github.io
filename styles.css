@@ -332,8 +332,8 @@ a.nes-btn.is-local,
 }
 
 .post-list li {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: .75rem;
 }
 
 .post-list li:last-child {
