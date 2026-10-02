@@ -3,7 +3,7 @@ layout: post
 title: "8 Royals Players May Be On The Move"
 date: 2025-07-15 16:00:00 -0600
 categories:
-  - Royals
+  - royals
 author: staff
 featured: true
 description: "8 Different Royals Players were listed in a top 100 list of the best trade candidates before the deadline."
