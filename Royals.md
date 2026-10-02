@@ -13,6 +13,7 @@ permalink: /royals/
 </div>
 
 {% include featured-by-category.html category="Royals" %}
+      {% include category-badge.html category=cat %}
 <section id="recent-posts" class="nes-container is-rounded" style="margin-bottom:1rem;">
   <p class="title">Recent Posts</p>
   {% if site.posts.size == 0 %}
