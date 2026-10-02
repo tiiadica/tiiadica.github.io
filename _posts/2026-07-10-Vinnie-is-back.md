@@ -3,7 +3,7 @@ layout: post
 title: "Pasquantino Returns To The Royals Roster After Quick Recovery"
 date: 2026-07-10 14:00:00 -0600
 categories:
-  - Royals
+  - royals
 author: staff
 featured: false
 description: "Vinnie Pasquantino is back and playing with the Kansas City Royals after having surgery on his hamate bone less than a month ago."
