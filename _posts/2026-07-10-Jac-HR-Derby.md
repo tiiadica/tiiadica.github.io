@@ -3,7 +3,7 @@ layout: post
 title: "Jac Caglianone Named Home Run Derby Participant"
 date: 2026-07-10 10:00:00 -0600
 categories:
-  - Royals
+  - royals
 author: staff
 featured: false
 description: "Jac Caglianone is going to live out his dream participating in the 2026 Home Run Derby representing the Kansas City Royals"
