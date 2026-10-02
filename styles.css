@@ -334,6 +334,7 @@ a.nes-btn.is-local,
 
 #recent-posts .title {
   color: #ffffff !important;
+  gap: 15px;
 }
 
 #recent-posts .small a {
