@@ -8,8 +8,8 @@ permalink: /articles/
   <a class="nes-btn is-success" href="/royals/">ROYALS</a>
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
   <a class="nes-btn is-chiefs" href="/categories/chiefs/">CHIEFS</a>
-  <a class="nes-btn is-articles" href="/articles/">ARTICLES</a>
-  <a class="nes-btn is-dark" href="/categories/articles/">ARTICLES</a>
+  <a class="nes-btn is-local" href="/local/">ARTICLES</a>
+  <a class="nes-btn is-dark" href="/articles/">ARTICLES</a>
 </div>
 
 <main class="wrap">
