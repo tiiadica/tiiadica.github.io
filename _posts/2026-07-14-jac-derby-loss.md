@@ -3,7 +3,7 @@ layout: post
 title: "Jac Has Decent Showing At Derby Debut"
 date: 2026-07-14 10:00:00 -0600
 categories:
-  - Royals
+  - royals
 author: staff
 featured: false
 description: "Jac Calgianone didn’t look bad for a novice at the MLB Home Run Derby this year… But he came up just short of making a real impact on the competition."
