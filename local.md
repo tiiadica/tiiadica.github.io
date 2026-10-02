@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Local
-permalink: /categories/local/
+permalink: /local/
 ---
 <div class="nav">
   <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
@@ -12,7 +12,7 @@ permalink: /categories/local/
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
-{% include featured-by-category.html category="Local" %}
+{% include featured-by-category.html category="local" %}
 <ul>
 {% for post in site.categories.local %}
   <li>
