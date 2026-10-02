@@ -12,14 +12,14 @@ permalink: /royals/
   <a class="nes-btn is-dark" href="/categories/stats/">STATS</a>
 </div>
 
-{% include featured-by-category.html category="Royals" %}
+{% include featured-by-category.html category="royals" %}
 <section id="recent-posts" class="nes-container is-rounded" style="margin-bottom:1rem;">
   <p class="title">Recent Posts</p>
   {% if site.posts.size == 0 %}
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.categories.Royals limit:5 %}
+      {% for post in site.categories.royals limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -45,7 +45,7 @@ permalink: /royals/
 </section>
 
 <script>
-fetch('/royals_videos.json')
+fetch('/_videos.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('latest-video-container');
