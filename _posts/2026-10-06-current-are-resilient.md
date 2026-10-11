@@ -7,7 +7,7 @@ categories:
   - opinion
 featured: true
 author: Tyler Horn
-description: "This KC Current team is nothing like their 2025 counterpart -- they are more resilient"
+description: "This KC Current team is nothing like their 2025 counterpart -- they're more resilient"
 image: /assets/images/currentresilient.png
 ---
 ## This KC Current team is nothing like their 2025 counterpart -- they’re more resilient
