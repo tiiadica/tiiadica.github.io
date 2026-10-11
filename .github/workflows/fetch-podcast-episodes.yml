@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Set up Ruby
-        uses: ruby/setup-ruby@5f19ec327149beee2263b7b5147a2773be1fc216
+        uses: ruby/setup-ruby@master
         with:
           ruby-version: '3.0'
       
