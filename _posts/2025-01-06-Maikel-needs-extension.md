@@ -5,11 +5,11 @@ date: 2025-09-11 10:00:00 -0600
 categories:
   - opinion
   - royals
-author: Tyler Horn
 featured: true
+author: Staff
 description: "Maikel Garcia is one of the best players in baseball... It would be unwise not to extend him soon."
+image: /assets/images/featured-default.jpg
 ---
- ![Image description](/assets/images/featured-default.jpg)
  
 Maikel is cool. Maikel Is neat. Maikel gets me through the summer's heat.
 
