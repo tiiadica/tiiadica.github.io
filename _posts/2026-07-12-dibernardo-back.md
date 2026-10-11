@@ -3,7 +3,7 @@ layout: post
 title: "Charlie Mae’s Mom Returns"
 date: 2026-07-12 09:00:00 +0000
 categories:
-  - Current
+  - current
 description: "Vanessa DiBernardo returns to the KC Current 6-7 months after giving birth to her daughter"
 image: /assets/images/vanessa.png
 ---
