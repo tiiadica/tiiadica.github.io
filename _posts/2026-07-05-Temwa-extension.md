@@ -3,7 +3,7 @@ layout: post
 title: "The Goat Is Staying In KC"
 date: 2026-07-05 10:00:00 +0000
 categories:
-  - Current
+  - current
 featured: false
 description: "The back to back MVP of the NWSL signs a contract extension with the KC Current through the 2029 season"
 image: /assets/images/temvp.png
