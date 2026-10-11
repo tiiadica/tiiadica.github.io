@@ -1,10 +1,6 @@
 {
   "videos": [
     {
-      "id": "bHMj7D5PpC8",
-      "title": "Grading The Royals Trade Deadline | The Royal Family Podcast Ep. 17"
-    },
-    {
       "id": "Pwg-K4e5p7A",
       "title": "Temwa Chawinga Does The Impossible! | Current Thoughts Podcast Ep. 4"
     },
@@ -31,6 +27,10 @@
     {
       "id": "PdDIAmq00H0",
       "title": "Should The Chiefs Build The KWIII Statue Already? | Chiefs Chatter Ep. 1"
+    },
+    {
+      "id": "HoPaqipg38k",
+      "title": "KC Peaking At The Right Time | Current Thoughts Ep. 9"
     }
   ]
 }
