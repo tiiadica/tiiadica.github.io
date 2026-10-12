@@ -20,7 +20,7 @@ permalink: /categories/chiefs/
     <p class="small">No posts yet.</p>
   {% else %}
     <ul class="post-list">
-      {% for post in site.categories.chiefs limit:5 %}
+      {% for post in site.categories.chiefs offset:1 limit:5 %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
           <span class="post-date small">{{ post.date | date: "%Y-%m-%d" }}</span>
