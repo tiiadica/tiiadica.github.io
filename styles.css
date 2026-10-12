@@ -365,6 +365,12 @@ span.post-date,
   color: #62CBC9 !important;
 }
 
+.author-style {
+  width: auto;
+  font-size: 1rem;
+  color: #fff
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .nav {
