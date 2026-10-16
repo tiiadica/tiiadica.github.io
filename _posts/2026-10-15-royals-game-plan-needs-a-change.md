@@ -7,7 +7,7 @@ categories:
   - opinion
 featured: true
 author: Tyler Horn
-description: "The Royals "reassigned" their hitting director; they need to go in an opposite direction with his replacement"
+description: "The Royals 'reassigned' their hitting director; they need to go in an opposite direction with his replacement"
 image: /assets/images/zumzum.png
 ---
 ## The Royals "reassigned" their hitting director; they need to go in an opposite direction with his replacement
