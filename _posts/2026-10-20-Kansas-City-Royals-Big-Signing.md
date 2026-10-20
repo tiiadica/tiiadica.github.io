@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Should The Royals Take A Risk On Japanese Superstar?"
-date: 2026-10-15 14:00:00 -0600
+date: 2026-10-20 15:19:00 -0600
 categories:
   - royals
 featured: true
