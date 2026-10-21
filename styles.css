@@ -366,6 +366,19 @@ span.post-date,
   color: #62CBC9 !important;
 }
 
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.post-meta time {
+  display: inline-flex;
+  align-items: center;
+}
+
 .author-style {
   width: auto;
   font-size: 1rem;
@@ -375,8 +388,8 @@ span.post-date,
 .author-row {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-top: 0.25rem;
+  gap: 0.5rem;
+  margin-top: 0;
 }
 
 .author-avatar {
