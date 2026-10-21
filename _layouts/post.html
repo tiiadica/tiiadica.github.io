@@ -25,7 +25,14 @@ layout: default
             {% include category-badge.html category=c %}
           {% endfor %}
         {% endif %}
-        {% if page.author %}<span class="author-style"> {{ page.author }}</span>{% endif %}
+        {% if page.author %}
+  <div class="author-row">
+    {% if page.author_image %}
+      <img src="{{ page.author_image | relative_url }}" alt="{{ page.author }}" class="author-avatar">
+    {% endif %}
+    <span class="author-style">{{ page.author }}</span>
+  </div>
+{% endif %}
         
       </div>
       {% if page.image %}
