@@ -397,7 +397,7 @@ span.post-date,
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #7AB2DD;
+  border: 2px solid #fff;
   background: #fff;
   display: block;
 }
