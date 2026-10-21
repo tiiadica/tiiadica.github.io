@@ -25,10 +25,20 @@ layout: default
             {% include category-badge.html category=c %}
           {% endfor %}
         {% endif %}
-        {% if page.author %}
+     {% if page.author %}
+  {% assign author_slug = page.author | downcase | replace: " ", "-" | replace: "'", "" | replace: ".", "" %}
+  {% assign author_image = '/assets/images/authors/' | append: author_slug | append: '.png' %}
+  {% assign has_author_image = false %}
+
+  {% for file in site.static_files %}
+    {% if file.path == author_image %}
+      {% assign has_author_image = true %}
+    {% endif %}
+  {% endfor %}
+
   <div class="author-row">
-    {% if page.author_image %}
-      <img src="{{ page.author_image | relative_url }}" alt="{{ page.author }}" class="author-avatar">
+    {% if has_author_image %}
+      <img src="{{ author_image | relative_url }}" alt="{{ page.author }}" class="author-avatar">
     {% endif %}
     <span class="author-style">{{ page.author }}</span>
   </div>
