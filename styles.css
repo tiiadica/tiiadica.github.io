@@ -372,6 +372,29 @@ span.post-date,
   color: #fff
 }
 
+.author-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #7AB2DD;
+  background: #fff;
+  display: block;
+}
+
+.author-style {
+  color: #62CBC9;
+  font-weight: 600;
+}
+
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .nav {
