@@ -276,6 +276,7 @@ a.nes-btn.is-local,
   border: 2px solid #000;
   border-radius: 4px;
   transition: opacity 0.3s ease;
+  margin: 0 0 1rem 0;
   cursor: url('assets/cursor.png') 16 16, auto !important;
 }
 
@@ -292,6 +293,13 @@ a.nes-btn.is-local,
   max-width: 100%;
 }
 
+.photo-credit {
+  text-align: center;
+  color: #7AB2DD;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
 
 @media (max-width: 768px) {
   .featured-image {
