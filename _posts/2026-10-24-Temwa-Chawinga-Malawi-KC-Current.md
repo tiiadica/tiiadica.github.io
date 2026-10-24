@@ -9,7 +9,7 @@ featured: true
 author: Tyler Horn
 description: "The KC Current don’t have anywhere near as many points as last year going into the playoffs -- but they do have Temwa"
 image: /assets/images/temalwi.png
-photo_credit: "Photo: Thad Bell"
+photo_credit: "Thad Bell"
 ---
 ## The KC Current don’t have anywhere near as many points as last year going into the playoffs -- but they do have Temwa
 
