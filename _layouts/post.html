@@ -48,10 +48,13 @@ layout: default
       {% if page.image %}
         <figure class="feature-image">
           <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="featured-image" style="max-width: 100%; height: auto; display: block;">
+          {% if page.photo_credit %}
+            <figcaption class="photo-credit">Photo credit: {{ page.photo_credit }}</figcaption>
+          {% endif %}
         </figure>
       {% endif %}
     </header>
-    <div class="post-body">
+   <div class="post-body">
     <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1200px;font-size: 18px;">
       {{ content }}
     </article>
