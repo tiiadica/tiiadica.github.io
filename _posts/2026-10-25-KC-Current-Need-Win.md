@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Current *Players* Are Focused"
+title: "The Current's Players Are Focused"
 date: 2026-10-25 18:17:00 -0600
 categories:
   - current
