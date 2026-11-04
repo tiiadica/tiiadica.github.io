@@ -27,7 +27,7 @@ permalink: /categories/ourteam/
         <div class="staff-info">
   <h4 class="staff-role">Editor/Founder</h4>
 <div class="post-body">
-    <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1200px;font-size: 18px;">
+    <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1500px;font-size: 18px;">
        <p>Tyler started The Royal Family KC when it was just a podcast, 'The Royal Family Podcast' at the time, covering mainly the Kansas City Royals with a little bit of KC Current coverage sprinkled in. After growing a modest little following on social media and growing more and more frustrated with the current landscape of sports media in Kansas City, as well as the sports teams ownership, he decided to turn what is now The Royal Family KC into a publication covering all of Kansas City sports and other small things in the KC community that need a light shone on it.
   
   With a background in writing, video editing, graphic design, social media management, audio engineering, and cinematography (all at drastically different skill levels); he manages the articles, podcasts, videos, posts, and graphics for The Royal Family KC. If you're reading this and there's more than 3 people on this team page then he maybe he's finally able to do less of all of that... </p>
