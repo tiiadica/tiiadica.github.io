@@ -13,7 +13,6 @@ permalink: /categories/ourteam/
 </div>
 
 <section class="staff-section">
-  <h2 class="nes-text is-primary">Meet the Team</h2>
 
   <div class="staff-list">
     <article class="staff-card nes-container is-rounded">
