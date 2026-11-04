@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Stats
-permalink: /categories/stats/
+title: Our team
+permalink: /categories/ourteam/
 ---
 <div class="nav">
   <a class="nes-btn is-primary" href="/podcast/">PODCAST</a>
