@@ -28,6 +28,6 @@ On this weeks episode of Current Thoughts on The Royal Family podcast: we tell y
 <main>
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-<iframe src="https://player.rss.com/the-royal-family-kc-royals-podcast/3293686?theme=color&v=3" width="100%" height="202px" title="Current Thoughts: Playoff Time In KC!" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"><a href="https://rss.com/podcasts/the-royal-family-kc-royals-podcast/3293686/">Current Thoughts: Playoff Time In KC! | RSS.com</a></iframe>
+<iframe src="https://player.rss.com/the-royal-family-kc-royals-podcast/3293686?theme=dark&v=3&hl=aGlkZV9sb2dv" width="100%" height="202px" title="Current Thoughts: Playoff Time In KC!" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"><a href="https://rss.com/podcasts/the-royal-family-kc-royals-podcast/3293686/">Current Thoughts: Playoff Time In KC! | RSS.com</a></iframe>
 </div>
 </main>
