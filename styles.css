@@ -459,6 +459,13 @@ span.post-date,
   }
 }
 
+.staff-role {
+  margin: -0.25rem 0 0.5rem;
+  color: #62CBC9;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
