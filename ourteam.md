@@ -12,10 +12,23 @@ permalink: /categories/ourteam/
   <a class="nes-btn is-dark" href="/categories/ourteam/">OUR TEAM</a>
 </div>
 
-<section class="featured-article nes-container is-rounded" style="margin-top:2rem;">
-  <h2 class="nes-text is-primary" style="margin-top:0;">COMING SOON</h2>
-  <div class="featured-image-container">
-    <img src="/assets/images/" alt="Currently in the process of creating a new quadratic formula" style="width: 100%; height: auto;">
+<section class="staff-section">
+  <h2 class="nes-text is-primary">Meet the Team</h2>
+
+  <div class="staff-list">
+    <article class="staff-card nes-container is-rounded">
+      <img
+        class="staff-avatar"
+        src="{{ '/assets/images/authors/tyler-horn.png' | relative_url }}"
+        alt="Tyler Horn"
+      >
+      <div class="staff-info">
+        <h3>Tyler Horn</h3>
+        <p>Add Tyler’s role and short bio here.</p>
+      </div>
+    </article>
+
+
   </div>
 </section>
 
