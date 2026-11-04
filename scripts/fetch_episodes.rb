@@ -153,7 +153,11 @@ def fetch_youtube_videos_for_playlist(playlist_id, output_filename)
 
     videos = videos.map { |v| { 'id' => v['id'], 'title' => v['title'] } }
     
-
+ if videos.empty?
+      puts "No videos returned for #{output_filename}; skipping write to avoid overwriting last good data"
+      return false
+    end
+    
     FileUtils.mkdir_p(DATA_DIR)
     
 
