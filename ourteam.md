@@ -24,6 +24,11 @@ permalink: /categories/ourteam/
       >
       <div class="staff-info">
         <h3>Tyler Horn</h3>
+        <div class="staff-info">
+  <h3>Tyler Horn</h3>
+  <h4 class="staff-role">Your position here</h4>
+  <p>Add Tyler’s short bio here.</p>
+</div>
         <p>Add Tyler’s role and short bio here.</p>
       </div>
     </article>
