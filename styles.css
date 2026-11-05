@@ -433,7 +433,7 @@ span.post-date,
   width: 200px;
   height: 200px;
   flex: 0 0 96px;
-  border-radius: 50%;
+  border-radius: 100%;
   object-fit: cover;
 }
 
