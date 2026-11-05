@@ -24,7 +24,7 @@ permalink: /categories/ourteam/
       <div class="staff-info">
         <h3>Tyler Horn</h3>
         <div class="staff-info">
-  <h4 class="staff-role">Co-founder</h4>
+  <h4 class="staff-role">Publisher & Co-founder</h4>
 <div class="post-body">
     <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1500px;font-size: 18px;">
        <p>Tyler started The Royal Family KC when it was just a podcast, 'The Royal Family Podcast' at the time, covering mainly the Kansas City Royals with a little bit of KC Current coverage sprinkled in. After growing a modest little following on social media and growing more and more frustrated with the current landscape of sports media in Kansas City, as well as the sports teams ownership, he decided to turn what is now The Royal Family KC into a publication covering all of Kansas City sports and other small things in the KC community that need a light shone on it.
@@ -50,7 +50,7 @@ permalink: /categories/ourteam/
       <div class="staff-info">
         <h3>Austin Dada</h3>
         <div class="staff-info">
-  <h4 class="staff-role">Contributor/Co-founder</h4>
+  <h4 class="staff-role">Contributor & Co-founder</h4>
 <div class="post-body">
     <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1500px;font-size: 18px;">
        <p>Even in the midst of 60+ hours a week profession, Austin actually came up with the idea of the original TRFKC podcast and helped Tyler build it from the ground up. He is a passionate KC sports fan, aspiring soccer analyst, contributing writer and host of our 'Current Thoughts' episodes covering all things KC Current. He is such a diehard KC sports fan that he still represents the bottom of the league, virtually hopeless Sporting KC in their quest to get back into form someday. He fell in love with Kansas City's original NWSL team, FCKC, and was heart broken when they were stolen by Utah. Luckily, the returned back to Kansas City in 2020 and he has closely followed them ever since. He also appears on The Royal Family's Kansas City Royals episodes from time to time, where he’s eager to learn more about the game and input Hud-isms from legendary baseball game MLB 08: The Show. IYKYK </p>
