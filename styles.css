@@ -432,9 +432,9 @@ span.post-date,
 .staff-avatar {
   width: 200px;
   height: 200px;
-  flex: 0 0 96px;
+  flex: 5 5 96px;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .staff-info h3 {
