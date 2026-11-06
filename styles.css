@@ -423,7 +423,7 @@ span.post-date,
 
 .staff-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   margin: 0;
   color: #fff;
