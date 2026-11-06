@@ -62,6 +62,28 @@ permalink: /categories/ourteam/
   </div>
 </section>
 
+  <div class="staff-list">
+    <article class="staff-card nes-container is-rounded">
+      <img
+        class="staff-avatar"
+        src="{{ '/assets/images/authors/tim-baggett.JPEG' | relative_url }}"
+        alt="Tyler Horn"
+      >
+      <div class="staff-info">
+        <h3>Tim Baggett</h3>
+        <div class="staff-info">
+  <h4 class="staff-role">Chiefs Chatter Co-host</h4>
+<div class="post-body">
+    <article class="nes-container is-rounded" style="background-color: white; padding: 2rem; margin: 2rem auto; font-family: 'Times New Roman', Times, serif; color: #000; max-width: 1500px;font-size: 18px;">
+       <p>Tim pretty chill</p>
+    </article>
+    </div>
+</div>
+      </div>
+    </article>  
+  </div>
+</section>
+
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
   <iframe src="https://theroyalfamilypodkc.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
 </div>
