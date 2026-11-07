@@ -7,7 +7,7 @@ categories:
 featured: true
 author: Tyler Horn
 description: "In this week’s episode of Current Thoughts; we go through everything you need to know before the Current’s playoff match this Saturday"
-image: /assets/images/allyreturn.png
+image: /assets/images/debally.png
 ---
 ## In this week’s episode of Current Thoughts; we go through everything you need to know before the Current’s playoff match this Saturday
 
