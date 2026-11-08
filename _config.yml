@@ -29,6 +29,13 @@ defaults:
     values:
       layout: post
       author: staff
+
+       - scope:
+      path: ""
+      type: pages
+    values:
+      image: /assets/images/TRFP-Logo.png
+      
 exclude:
   - Gemfile
   - Gemfile.lock
