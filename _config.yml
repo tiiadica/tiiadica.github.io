@@ -30,7 +30,7 @@ defaults:
       layout: post
       author: staff
 
-       - scope:
+  - scope:
       path: ""
       type: pages
     values:
