@@ -44,6 +44,7 @@ select {
 .nes-btn.is-dark,
 .nes-btn.is-chiefs,
 .nes-btn.is-local,
+.nes-btn.is-sporting,
 button.nes-btn.is-primary,
 button.nes-btn.is-success,
 button.nes-btn.is-warning,
@@ -52,6 +53,7 @@ button.nes-btn.is-disabled,
 button.nes-btn.is-dark,
 button.nes-btn.is-chiefs,
 button.nes-btn.is-local,
+button.nes-btn.is-sporting,
 a.nes-btn.is-primary,
 a.nes-btn.is-success,
 a.nes-btn.is-warning,
@@ -60,6 +62,7 @@ a.nes-btn.is-disabled,
 a.nes-btn.is-dark,
 a.nes-btn.is-chiefs,
 a.nes-btn.is-local,
+a.nes-btn.is-sporting,
 .nes-btn.is-primary:active,
 .nes-btn.is-success:active,
 .nes-btn.is-warning:active,
@@ -68,12 +71,14 @@ a.nes-btn.is-local,
 .nes-btn.is-dark:active,
 .nes-btn.is-chiefs:active,
 .nes-btn.is-local:active,
+.nes-btn.is-local:active,
 .nes-btn.is-primary:focus,
 .nes-btn.is-success:focus,
 .nes-btn.is-warning:focus,
 .nes-btn.is-error:focus,
 .nes-btn.is-disabled:focus,
 .nes-btn.is-dark:focus,
+.nes-btn.is-sporting:focus,
 .nes-btn.is-chiefs:focus,
 .nes-btn.is-chiefs:focus {
   box-shadow:
@@ -138,6 +143,14 @@ a.nes-btn.is-local,
     0 0.5em 0 #212529 !important;
 }
 
+.nes-btn.is-sporting,
+.nes-btn.is-sporting:active,
+.nes-btn.is-sporting:focus {
+  box-shadow:
+    0 0.25em 0 #002F65 !important,
+    0 0.5em 0 #212529 !important;
+}
+
 
 .nes-btn.is-primary {
   background-color: #C09C5B !important;
@@ -195,6 +208,12 @@ a.nes-btn.is-local,
   color: #000 !important;
 }
 
+.nes-btn.is-sporting {
+  background-color: #91B0D5 !important;
+  border-color: #91B0D5 !important;
+  color: #000 !important;
+}
+
 .hero {
   text-align: center;
   display: block;
@@ -240,6 +259,7 @@ a.nes-btn.is-local,
 .nes-btn.is-dark::after { box-shadow: inset -4px -4px #FFFFFF !important; }
 .nes-btn.is-chiefs::after { box-shadow: inset -4px -4px #FFB81C !important; }
 .nes-btn.is-local::after { box-shadow: inset -4px -4px #004687 !important; }
+.nes-btn.is-sporting::after { box-shadow: inset -4px -4px #002F65 !important; }
 
 .nes-btn.is-success:hover::after { box-shadow: inset -6px -6px #7AB2DD !important; }
 .nes-btn.is-primary:hover::after { box-shadow: inset -6px -6px #004687 !important; }
@@ -249,6 +269,7 @@ a.nes-btn.is-local,
 .nes-btn.is-dark:hover::after { box-shadow: inset -6px -6px #FFFFFF !important; }
 .nes-btn.is-chiefs:hover::after { box-shadow: inset -6px -6px #FFB81C !important; }
 .nes-btn.is-local:hover::after { box-shadow: inset -6px -6px #004687 !important; }
+.nes-btn.is-sporting:hover::after { box-shadow: inset -6px -6px #002F65 !important; }
 
 .nes-btn.is-success:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #7AB2DD !important; }
 .nes-btn.is-primary:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
@@ -258,6 +279,7 @@ a.nes-btn.is-local,
 .nes-btn.is-dark:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFFFFF !important; }
 .nes-btn.is-chiefs:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #FFB81C !important; }
 .nes-btn.is-local:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #004687 !important; }
+.nes-btn.is-sporting:active:not(.is-disabled)::after { box-shadow: inset 4px 4px #002F65 !important; }
 
 
 .featured-content {
