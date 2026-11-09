@@ -155,7 +155,7 @@ a.nes-btn.is-sporting,
 .nes-btn.is-primary {
   background-color: #C09C5B !important;
   border-color: #C09C5B !important;
-  color: #fff !important; /* White text per request */
+  color: #fff !important; 
 }
 
 
@@ -211,8 +211,8 @@ a.nes-btn.is-sporting,
 .nes-btn.is-sporting {
   background-color: #91B0D5 !important;
   border-color: #91B0D5 !important;
-  color: #000 !important;
-  word-spacing: -0.8em;
+  color: #fff !important;
+  word-spacing: -1.2em;
 }
 
 .hero {
