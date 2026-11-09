@@ -181,6 +181,7 @@ puts ""
 current_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_neUha6kKjH3Eu5DfV5wOtA', 'current_videos.json')
 royals_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_kFP6hmE3LVHFjTNj9WIu01', 'royals_videos.json')
 chiefs_success = fetch_youtube_videos_for_playlist('PLZAP3OF9f6nY', 'chiefs_videos.json')
+sporting_success = fetch_youtube_videos_for_playlist('PLS4dl3Lb4KG4', 'sporting_videos.json')
 podcast_success = fetch_youtube_videos_for_playlist('PLz-qXKR6_H_miJi7Vg8QVgeug83Jq5d73', 'podcast_videos.json')
 
 puts "=" * 50
@@ -189,9 +190,10 @@ puts "podcast_episodes.json: #{File.exist?(File.join(DATA_DIR, 'podcast_episodes
 puts "current_videos.json: #{File.exist?(File.join(DATA_DIR, 'current_videos.json'))}"
 puts "royals_videos.json: #{File.exist?(File.join(DATA_DIR, 'royals_videos.json'))}"
 puts "chiefs_videos.json: #{File.exist?(File.join(DATA_DIR, 'chiefs_videos.json'))}"
+puts "sporting_videos.json: #{File.exist?(File.join(DATA_DIR, 'sporting_videos.json'))}"
 puts "podcast_videos.json: #{File.exist?(File.join(DATA_DIR, 'podcast_videos.json'))}"
 
-if audio_success && current_success && royals_success && chiefs_success && podcast_success
+if audio_success && current_success && royals_success && chiefs_success && podcast_success && sporting_success
   puts "✓ All tasks completed successfully"
   exit 0
 else
