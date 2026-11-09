@@ -147,8 +147,8 @@ a.nes-btn.is-sporting,
 .nes-btn.is-sporting:active,
 .nes-btn.is-sporting:focus {
   box-shadow:
-    0 0.25em 0 #002F65 !important,
-    0 0.5em 0 #002F65 !important;
+    0 0.25em 0 #91B0D5 !important,
+    0 0.5em 0 #91B0D5 !important;
 }
 
 
@@ -209,10 +209,10 @@ a.nes-btn.is-sporting,
 }
 
 .nes-btn.is-sporting {
-  background-color: #91B0D5 !important;
-  border-color: #91B0D5 !important;
+  background-color: #002F65 !important;
+  border-color: #002F65 !important;
   color: #fff !important;
-  word-spacing: -1.2em;
+  word-spacing: -1.8em;
 }
 
 .hero {
