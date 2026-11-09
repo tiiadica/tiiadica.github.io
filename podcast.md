@@ -8,6 +8,7 @@ permalink: /podcast/
   <a class="nes-btn is-success" href="/royals/">ROYALS</a>
   <a class="nes-btn is-warning" href="/categories/current/">CURRENT</a>
   <a class="nes-btn is-chiefs" href="/categories/chiefs/">CHIEFS</a>
+  <a class="nes-btn is-sporting" href="/sporting/">SPORTING</a>
   <a class="nes-btn is-local" href="/local/">LOCAL</a>
   <a class="nes-btn is-dark" href="/categories/ourteam/">OUR TEAM</a>
 </div>
