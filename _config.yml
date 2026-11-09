@@ -22,6 +22,7 @@ category_colors:
   chiefs: "#E31837"
   updates: "#C50F74"
   local: "#130551"
+  sporting: "#002F65"
 defaults:
   - scope:
       path: ""
