@@ -37,12 +37,13 @@ jobs:
           cp _data/current_videos.json ./current_videos.json
           cp _data/royals_videos.json ./royals_videos.json
           cp _data/chiefs_videos.json ./chiefs_videos.json
+          cp _data/sporting_videos.json ./sporting_videos.json
           ls -la *.json
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add podcast_episodes.json podcast_videos.json current_videos.json royals_videos.json chiefs_videos.json
+          git add podcast_episodes.json podcast_videos.json current_videos.json royals_videos.json chiefs_videos.json sporting_videos.json
           git commit -m "Update podcast JSON files (automated)" || echo "No changes to commit"
           git push
