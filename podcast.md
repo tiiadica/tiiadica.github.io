@@ -13,7 +13,7 @@ permalink: /podcast/
   <a class="nes-btn is-dark" href="/categories/ourteam/">OUR TEAM</a>
 </div>
 
-
+<!-- Platform Links -->
 <div class="podcast-platforms nes-container is-rounded">
   <p class="title">Available Wherever You Get Your Podcasts</p>
   <div class="platform-icons">
@@ -36,14 +36,31 @@ permalink: /podcast/
   </div>
 </div>
 
+<!-- Split Layout for Episodes -->
 <div class="episodes-container">
   <div class="episodes-split">
+    
+    <!-- Audio Episodes (Left) -->
+    <div class="audio-episodes nes-container is-rounded">
+      <h2 class="nes-text is-primary">Audio Episodes</h2>
+      <div id="audio-episodes-list">
+        <p>Loading episodes...</p>
+      </div>
+    </div>
+    
+    <!-- YouTube Episodes (Right) -->
+    <div class="youtube-episodes nes-container is-rounded">
+      <h2 class="nes-text is-primary">YouTube Episodes</h2>
+      <div id="youtube-episodes-list">
+        <p>Loading videos...</p>
+      </div>
+    </div>
     
   </div>
 </div>
 
 <style>
-
+/* Podcast-specific styles */
   .podcast-platforms {
   margin-bottom: 2rem;
   align-items: center;
@@ -128,7 +145,7 @@ permalink: /podcast/
   border: 2px solid #444;
 }
 
-
+/* Responsive design */
 @media (max-width: 768px) {
   .episodes-split {
     grid-template-columns: 1fr;
@@ -149,7 +166,7 @@ permalink: /podcast/
 </style>
 
 <script>
-
+// Fetch and load audio episodes
 fetch('/podcast_episodes.json')
   .then(response => response.json())
   .then(data => {
@@ -196,7 +213,7 @@ fetch('/podcast_episodes.json')
     document.getElementById('audio-episodes-list').innerHTML = '<p>Error loading episodes</p>';
   });
 
-
+// Fetch and load YouTube videos
 fetch('/podcast_videos.json')
   .then(response => response.json())
   .then(data => {
@@ -204,7 +221,7 @@ fetch('/podcast_videos.json')
     container.innerHTML = '';
     
     if (data.videos && data.videos.length > 0) {
-    
+      // Create video selector
       const selectorDiv = document.createElement('div');
       selectorDiv.className = 'video-selector nes-container is-rounded';
       selectorDiv.style.marginBottom = '1rem';
@@ -235,7 +252,7 @@ fetch('/podcast_videos.json')
       selectorDiv.appendChild(label);
       selectorDiv.appendChild(selectDiv);
       
-  
+      // Create video embed
       const embedDiv = document.createElement('div');
       embedDiv.className = 'youtube-embed';
       embedDiv.style.marginBottom = '1rem';
@@ -251,7 +268,7 @@ fetch('/podcast_videos.json')
       
       embedDiv.appendChild(iframe);
       
-
+      // Create playlist link
       const linkDiv = document.createElement('p');
       linkDiv.style.textAlign = 'center';
       linkDiv.style.marginTop = '1rem';
@@ -269,7 +286,7 @@ fetch('/podcast_videos.json')
       container.appendChild(embedDiv);
       container.appendChild(linkDiv);
       
-
+      // Video navigation logic
       let currentVideoIndex = 0;
       
       function displayVideo(index) {
@@ -286,7 +303,7 @@ fetch('/podcast_videos.json')
         displayVideo(parseInt(e.target.value));
       });
       
-
+     // Load first video (most recent)
 if (data.videos && data.videos.length > 0) {
   displayVideo(data.videos.length - 1);
 }
